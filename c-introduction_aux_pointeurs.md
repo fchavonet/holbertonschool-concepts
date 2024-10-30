@@ -1,4 +1,6 @@
-# Introduction aux Pointeurs en C
+<img  height="50px" align="right" src="https://raw.githubusercontent.com/fchavonet/fchavonet/main/resources/images/logo-c.png" alt="C logo">
+
+# C - Introduction aux pointeurs
 
 Les pointeurs sont une notion fondamentale en langage C, ce petit guide a pour but de vous expliquer en détail ce que sont les pointeurs, comment les utiliser et pourquoi ils sont utiles, le tout avec des exemples clairs pour en faciliter la compréhension.
 
@@ -21,7 +23,7 @@ Imaginez la mémoire comme une grande armoire avec des tiroirs numérotés (les 
 - **Structures de données complexes** : utiles pour créer des structures comme les listes chaînées, les arbres, les graphes, etc.
 
 ---
-#regular
+_#regular_
 ## Comment déclarer un pointeur ?
 
 Pour déclarer un pointeur, vous utilisez l'opérateur `*` lors de la déclaration de la variable.
@@ -37,7 +39,7 @@ float *pointeur_float;
 - `float *pointeur_float;` déclare un pointeur vers un flottant.
 
 ---
-#regular
+_#regular_
 ## Obtenir l'adresse d'une variable
 
 Pour obtenir l'adresse mémoire d'une variable, on utilise l'opérateur `&`.
@@ -51,49 +53,50 @@ int *pointeur = &nombre;
 - `pointeur` contient maintenant l'adresse de `nombre`.
 
 ---
-#regular
+_#regular_
 ## Accéder à la valeur pointée (déréférencement)
 
 Pour accéder ou modifier la valeur à laquelle un pointeur fait référence, on utilise l'opérateur `*` (déréférencement).
 
 ```c
-// Affiche la valeur de "nombre" (42).
+/* Affiche la valeur de "nombre" (42). */
 printf("%d\n", *pointeur);
 
-// Modifie la valeur de "nombre" à 100.
+/* Modifie la valeur de "nombre" à 100. */
 *pointeur = 100; 
 ```
 
 ---
-#regular
+_#regular_
 ## Exemple complet
 
 ```c
 #include <stdio.h>
 
-int main(void) {
-    int nombre = 42;
-    int *pointeur = &nombre;
+int main(void)
+{
+	int nombre = 42;
+	int *pointeur = &nombre;
 
-	// Affiche 42.
-    printf("Valeur de nombre: %d\n", nombre);
-    
-    // Affiche l'adresse mémoire de "nombre".
-    printf("Adresse de nombre: %p\n", &nombre);
-    
-    // Même adresse que "&nombre".
-    printf("Valeur du pointeur: %p\n", pointeur);
-    
-    // Affiche 42.
-    printf("Valeur pointée par le pointeur: %d\n", *pointeur); 
+	/* Affiche 42. */
+	printf("Valeur de nombre: %d\n", nombre);
 
-	// Modifie la valeur de "nombre" à 100.
-    *pointeur = 100; 
-    
-    // Affiche 100.
-    printf("Nouvelle valeur de nombre: %d\n", nombre);
+	/* Affiche l'adresse mémoire de "nombre". */
+	printf("Adresse de nombre: %p\n", &nombre);
 
-    return (0);
+	/* Même adresse que "&nombre". */
+	printf("Valeur du pointeur: %p\n", pointeur);
+
+	/* Affiche 42. */
+	printf("Valeur pointée par le pointeur: %d\n", *pointeur);
+
+	/* Modifie la valeur de "nombre" à 100. */
+	*pointeur = 100;
+
+	/* Affiche 100. */
+	printf("Nouvelle valeur de nombre: %d\n", nombre);
+
+	return (0);
 }
 ```
 
@@ -103,7 +106,7 @@ int main(void) {
 - En modifiant `*pointeur`, on modifie directement `nombre`.
 
 ---
-#regular
+_#regular_
 ## Pointeurs et tableaux
 
 En C, le nom d'un tableau est un pointeur vers son premier élément.
@@ -115,7 +118,7 @@ int *pointeur = tableau;
 printf("%d\n", tableau[0]); // 1
 printf("%d\n", *pointeur);  // 1
 
-// Accéder aux autres éléments.
+/* Accéder aux autres éléments. */
 printf("%d\n", *(pointeur + 1)); // 2
 printf("%d\n", pointeur[2]); // 3
 ```
@@ -123,7 +126,7 @@ printf("%d\n", pointeur[2]); // 3
 **Note :** `pointeur[2]` est équivalent à `*(pointeur + 2)`.
 
 ---
-#regular
+_#regular_
 ## Passage de pointeurs aux fonctions
 
 Les pointeurs permettent de modifier une variable dans une fonction.
@@ -151,7 +154,7 @@ int main(void) {
 - La fonction modifie la valeur à cette adresse.
 
 ---
-#advanced
+_#advanced_
 ## Allocation dynamique de mémoire
 
 Les pointeurs sont essentiels pour gérer la mémoire dynamique.
@@ -160,29 +163,33 @@ Les pointeurs sont essentiels pour gérer la mémoire dynamique.
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(void) {
-    int *tableau;
-    int taille;
+int main(void)
+{
+	int *tableau;
+	int taille;
 
-    printf("Entrez la taille du tableau : ");
-    scanf("%d", &taille);
+	printf("Entrez la taille du tableau : ");
+	scanf("%d", &taille);
 
-    tableau = (int *)malloc(taille * sizeof(int));
-    if (tableau == NULL) {
-        printf("Allocation échouée.\n");
-        return 1;
-    }
+	tableau = (int *)malloc(taille * sizeof(int));
+	if (tableau == NULL)
+	{
+		printf("Allocation échouée.\n");
+		return (1);
+	}
 
-    for (int i = 0; i < taille; i++) {
-        tableau[i] = i * 2;
-    }
+	for (int i = 0; i < taille; i++)
+	{
+		tableau[i] = i * 2;
+	}
 
-    for (int i = 0; i < taille; i++) {
-        printf("tableau[%d] = %d\n", i, tableau[i]);
-    }
+	for (int i = 0; i < taille; i++)
+	{
+		printf("tableau[%d] = %d\n", i, tableau[i]);
+	}
 
-    free(tableau);
-    return (0);
+	free(tableau);
+	return (0);
 }
 ```
 
@@ -193,7 +200,7 @@ int main(void) {
 - Ne pas oublier de libérer la mémoire avec `free`.
 
 ---
-#advanced
+_#advanced_
 ## Arithmétique des pointeurs
 
 Vous pouvez effectuer des opérations sur les pointeurs pour naviguer en mémoire.
@@ -214,7 +221,7 @@ printf("%d\n", *pointeur); // 40
 **Note :** lorsqu'on incrémente un pointeur vers un type `int`, il avance de la taille d'un `int` en mémoire.
 
 ---
-#regular
+_#regular_
 ## Pointeurs NULL
 
 Un pointeur peut ne pointer vers aucune adresse valide. On l'initialise alors à `NULL`.
@@ -223,14 +230,14 @@ Un pointeur peut ne pointer vers aucune adresse valide. On l'initialise alors à
 int *pointeur = NULL;
 
 if (pointeur == NULL) {
-    printf("Le pointeur ne pointe vers rien.\n");
+	printf("Le pointeur ne pointe vers rien.\n");
 }
 ```
 
 **Important :** toujours vérifier qu'un pointeur n'est pas `NULL` avant de le déréférencer.
 
 ---
-#regular #advanced
+_#regular_ _#advanced_
 ## Erreurs courantes
 
 - **Déréférencement d'un pointeur non initialisé :**
@@ -263,4 +270,4 @@ int *pointeur = nombre; // Erreur ! Doit être "int *pointeur = &nombre;".
 
 ## Conclusion
 
-Les pointeurs sont un outil puissant qui, une fois maîtrisé, vous permettra de créer des programmes efficaces et complexes. Ils demandent du temps et de la pratique pour être bien compris, mais sont indispensables pour tout programmeur C ;) !
+Les pointeurs sont un outil puissant qui, une fois maîtrisé, vous permettra de créer des programmes efficaces et complexes. Ils demandent du temps et de la pratique pour être bien compris, mais sont indispensables pour tout programmeur C 😉 !
