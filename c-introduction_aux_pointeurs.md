@@ -105,6 +105,10 @@ int main(void)
 - `pointeur` pointe vers `nombre`.
 - En modifiant `*pointeur`, on modifie directement `nombre`.
 
+<p align="center">
+	<img src="./resources/images/c-introduction_aux_pointeurs.webp">
+</p>
+
 ---
 _#regular_
 ## Pointeurs et tableaux
@@ -134,17 +138,19 @@ Les pointeurs permettent de modifier une variable dans une fonction.
 ```c
 #include <stdio.h>
 
-void incrementer(int *nombre) {
-    (*nombre)++;
+void incrementer(int *nombre)
+{
+	(*nombre)++;
 }
 
-int main(void) {
-    int valeur = 10;
-    incrementer(&valeur);
-    
-    printf("Valeur : %d\n", valeur); // 11
-    
-    return (0);
+int main(void)
+{
+	int valeur = 10;
+	incrementer(&valeur);
+
+	printf("Valeur : %d\n", valeur); // 11
+
+	return (0);
 }
 ```
 
@@ -229,7 +235,8 @@ Un pointeur peut ne pointer vers aucune adresse valide. On l'initialise alors à
 ```c
 int *pointeur = NULL;
 
-if (pointeur == NULL) {
+if (pointeur == NULL)
+{
 	printf("Le pointeur ne pointe vers rien.\n");
 }
 ```
