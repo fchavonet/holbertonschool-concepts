@@ -1,4 +1,4 @@
-<img  height="50px" align="right" src="https://raw.githubusercontent.com/fchavonet/fchavonet/main/resources/images/logo-c.png" alt="C logo">
+<img  height="50px" align="right" src="https://raw.githubusercontent.com/fchavonet/fchavonet/main/assets/images/logo-c.png" alt="C logo">
 
 # C - Introduction aux pointeurs
 
@@ -106,7 +106,7 @@ int main(void)
 - En modifiant `*pointeur`, on modifie directement `nombre`.
 
 <p align="center">
-	<img src="./resources/images/c-introduction_aux_pointeurs.webp">
+	<img src="./assets/images/c-introduction_aux_pointeurs.webp">
 </p>
 
 ---
