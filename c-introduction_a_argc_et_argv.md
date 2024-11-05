@@ -13,7 +13,7 @@ Les paramètres `argc` et `argv` de la fonction `main` permettent de gére
 - **`argv`** : c'est un tableau de chaînes de caractères (`char *argv[]`), où chaque élément est un **argument** passé au programme.
 
 **En résumé :**
-
+x
 - `argc` (argument count) est le nombre total d'arguments.
 - `argv` (argument vector) est un tableau contenant les arguments sous forme de chaînes de caractères.
 
@@ -37,7 +37,7 @@ _#regular_
 
 Imaginons que vous exécutez votre programme comme ceci :
 
-```bash
+```
 ./mon_programme argument1 argument2 argument3
 ```
 
@@ -78,13 +78,13 @@ int main(int argc, char *argv[])
 
 Si vous compilez ce programme et l'exécutez avec :
 
-```bash
+```
 ./mon_programme Hello World
 ```
 
 **Sortie :**
 
-```bash
+```
 Nombre d'arguments : 3
 Argument 0 : ./mon_programme
 Argument 1 : Hello
@@ -131,13 +131,13 @@ int main(int argc, char *argv[])
 
 ### Exécution :
 
-```bash
+```
 ./mon_programme 5 7
 ```
 
 **Sortie :**
 
-```bash
+```
 La somme de 5 et 7 est 12
 ```
 
@@ -198,13 +198,13 @@ int main(int argc, char *argv[])
 
 ### Exécution :
 
-```bash
+```
 ./mon_programme pomme banane orange
 ```
 
 **Sortie :**
 
-```bash
+```
 Liste des arguments :
 - pomme
 - banane
@@ -256,13 +256,13 @@ int main(int argc, char *argv[])
 
 ### Exécution :
 
-```bash
+```
 ./mon_programme --help
 ```
 
 **Sortie :**
 
-```bash
+```
 Usage : ./mon_programme [options]
 Options :
   -h, --help    Afficher cette aide
@@ -331,13 +331,13 @@ int main(int argc, char *argv[])
 
 ### Exécution :
 
-```bash
+```
 ./calculatrice 10 / 2
 ```
 
 **Sortie :**
 
-```bash
+```
 Résultat : 5.000000
 ```
 
