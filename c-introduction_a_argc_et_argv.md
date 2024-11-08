@@ -1,4 +1,4 @@
-<img  height="50px" align="right" src="https://raw.githubusercontent.com/fchavonet/fchavonet/main/assets/images/logo-c.png" alt="C logo">
+<img  height="50px" align="right" src="https://raw.githubusercontent.com/fchavonet/fchavonet/refs/heads/main/resources/images/logo-c.png" alt="C logo">
 
 # C - Introduction à `argc` et `argv`
 
@@ -13,7 +13,7 @@ Les paramètres `argc` et `argv` de la fonction `main` permettent de gére
 - **`argv`** : c'est un tableau de chaînes de caractères (`char *argv[]`), où chaque élément est un **argument** passé au programme.
 
 **En résumé :**
-x
+
 - `argc` (argument count) est le nombre total d'arguments.
 - `argv` (argument vector) est un tableau contenant les arguments sous forme de chaînes de caractères.
 
