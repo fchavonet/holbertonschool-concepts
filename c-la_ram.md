@@ -56,11 +56,23 @@ C'est encore une autre zone de la RAM, utilisée pour les données qu'on veut ga
 
 ---
 
+## Shéma fonctionnel
+
+<p align="center">
+    <picture>
+        <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/fchavonet/holbertonschool-concepts/refs/heads/main/assets/images/shema_fonctionnel-light.png">
+        <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/fchavonet/holbertonschool-concepts/refs/heads/main/assets/images/shema_fonctionnel-dark.png">
+        <img src="https://raw.githubusercontent.com/fchavonet/holbertonschool-concepts/refs/heads/main/assets/images/shema_fonctionnel-light.png" alt="Shéma fonctionnel">
+    </picture>
+</p>
+
+---
+
 ## Comparaison simplifiée
 
 | **Caractéristique** | **Zone de code**          | **Zone des données statiques**            | **Stack (pile)**                | **Heap (tas)**                  |
-| :-----------------: | ------------------------- | ----------------------------------------- | ------------------------------- | ------------------------------- |
-| **UTILISATION**     | Instructions du programme | Variables globales, statiques, constantes | Variables locales des fonctions | Allocation dynamique (`malloc`) |
+| :-----------------: | :-----------------------: | :---------------------------------------: | :-----------------------------: | :-----------------------------: |
+| **UTILISATION**     | Instructions du programme | Variables globales, statiques, constantes | Variables locales               | Allocation dynamique (`malloc`) |
 | **GESTION**         | Lecture seule             | Automatique                               | Automatique                     | Manuelle (`free`)               |
 | **DURÉE DE VIE**    | Tout le programme         | Tout le programme                         | Durée de la fonction            | Jusqu’à `free`                  |
 | **VITESSE**         | Rapide                    | Rapide                                    | Rapide                          | Plus lente                      |
@@ -94,12 +106,15 @@ int main(void)
 
 	heapVar = malloc(sizeof(int)); /* Stocké dans la heap */
 	if (heapVar == NULL)           /* Vérifie si l'allocation a réussi */
+	{
 		return (1);
+	}
 
 	*heapVar = 20;
 	printf("Variable dans la heap: %d\n", *heapVar);
 
 	free(heapVar); /* On libère la mémoire dans la heap */
+	
 	return (0);
 }
 ```
