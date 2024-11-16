@@ -22,13 +22,13 @@ mkdir -p Documents/Ubuntu
 cd Documents/Ubuntu
 ```
 
-7. Télécharger l'image Ubuntu pour Docker :
+7. Télécharger l'image **Ubuntu** pour **Docker** :
 
 ```bash
 docker pull ubuntu:latest
 ```
 
-8. Créer un nouveau conteneur Ubuntu et l'exécuter en mode interactif :
+8. Créer un nouveau conteneur **Ubuntu** et l'exécuter en mode interactif :
 
 ```bash
 docker run -itd --restart always --name Holberton -v $(pwd):/home/ubuntu/ ubuntu
@@ -54,33 +54,41 @@ docker run -itd --restart always --name Holberton -v $(pwd):/home/ubuntu/ ubuntu
 
 10. Ouvrir Visual Studio Code et cliquer sur l'icône Remote Explorer.
 
+<p align="left">
+    <img src="./assets/images/screenshot-remote_explorer.webp" alt="Remote Explorer screenshot">
+</p>
+
 11. Cliquer sur `ubuntu Holberton` (dans notre exemple).
 
 12. Cliquer sur la flèche vers la droite (->) pour lancer le conteneur.
 
-13. Ouvrir le dossier utilisateur en tant que projet dans Visual Studio Code.
+<p align="left">
+    <img src="./assets/images/screenshot-dev_containers.webp" alt="Dev Containers screenshot">
+</p>
 
-14. Ouvrir un Terminal dans Visual Studio Code (`Cmd+J`).
+13. Ouvrir le dossier utilisateur en tant que projet dans **Visual Studio Code**.
 
-15. Installer les paquets de base d'Ubuntu :
+14. Ouvrir un Terminal, toujours dans **Visual Studio Code** (`Cmd+J`).
+
+15. Installer les paquets de base d'Ubuntu (peut ne pas fonctionner selon la version, passer à l'étape 16 si c'est le cas) :
 
 ```bash
 unminimize
 ```
 
-16. Mettre à jour Ubuntu :
+16. Mettre à jour **Ubuntu** :
 
 ```bash
 apt update && apt upgrade -y
 ```
 
-17. Installer le paquet locales :
+17. Installer le paquet *locales* :
 
 ```bash
 apt install locales -y
 ```
 
-18. Générer les locales :
+18. Générer les *locales* :
 
 ```bash
 locale-gen en_US.UTF-8
@@ -88,9 +96,13 @@ locale-gen en_US.UTF-8
 
 19. Fermer **Visual Studio Code**, ouvrir **Docker Desktop** et redémarrer le conteneur Holberton.
 
+<p align="left">
+    <img src="./assets/images/screenshot-docker_desktop.webp" alt="Docker Desktop screenshot">
+</p>
+
 20. Relancer **Visual Studio Code**.
 
-21. Configurer les locales :
+21. Configurer les *locales* :
 
 ```bash
 export LANG=en_US.UTF-8
@@ -98,13 +110,13 @@ export LANGUAGE=en_US:en
 export LC_ALL=en_US.UTF-8
 ```
 
-22. Installer **Git**:
+22. Installer `git` :
 
 ```bash
 apt install git -y
 ```
 
-23. Configurez **Git** :
+23. Configurez `git` :
 
 ```bash
 git config --global user.name "Nom d'utilisateur GitHub"
@@ -114,7 +126,7 @@ git config --global user.name "Nom d'utilisateur GitHub"
 git config --global user.email "Email GitHub"
 ```
 
-24. Installer **VIM**:
+24. Installer `vim` :
 
 ```bash
 apt install vim -y
@@ -133,3 +145,61 @@ Vous n'aurez pas besoin d'utiliser `sudo` avant les commandes, car vous êtes di
 Vous pouvez maintenant suivre les instructions des projets sans aucun problème avec une sandbox **Ubuntu** locale.
 
 ---
+
+### Bonus :
+
+25. Installer `gcc`:
+
+```bash
+apt install gcc -y
+```
+
+26. Installer `make`:
+
+```bash
+apt install make -y
+```
+
+27. Installer `python3`:
+
+```bash
+apt install python3 -y
+```
+
+28. Installer `pycodestyle`:
+
+```bash
+apt install pycodestyle -y
+```
+
+29. Installer `venv`:
+
+```bash
+apt install python3-venv -y
+```
+
+**Comment et pourquoi utiliser un environnement virtuel (pour le Python) :**
+
+Cela permet d'isoler les dépendances spécifiques à votre projet, évitant les conflits avec les bibliothèques système ou les limitations d'installation de paquets via `pip`. En effet, sur Mac et dans des environnements containerisés, certaines bibliothèques Python peuvent nécessiter des permissions ou des configurations particulières. Avec `venv`, vous travaillez dans un espace isolé où les paquets sont installés localement, sans impact sur le système global ou les autres projets, garantissant ainsi une configuration propre et reproductible.
+
+**Comment utiliser `venv` :**
+
+- Ouvrez votre dossier de travail depuis le terminal de **Visual Studio Code**.
+
+- Créer un environnement virtuel :
+
+```bash
+python3 -m venv venv
+```
+
+- Activer l'environnement virtuel :
+
+```bash
+source venv/bin/activate
+```
+
+- Désactiver l'environnement virtuel :
+
+```bash
+deactivate
+```
