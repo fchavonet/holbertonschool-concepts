@@ -182,6 +182,8 @@ apt install python3-venv -y
 
 Cela permet d'isoler les dépendances spécifiques à votre projet, évitant les conflits avec les bibliothèques système ou les limitations d'installation de paquets via `pip`. En effet, sur Mac et dans des environnements containerisés, certaines bibliothèques Python peuvent nécessiter des permissions ou des configurations particulières. Avec `venv`, vous travaillez dans un espace isolé où les paquets sont installés localement, sans impact sur le système global ou les autres projets, garantissant ainsi une configuration propre et reproductible.
 
+[Documentation](https://docs.python.org/fr/3.13/library/venv.html)
+
 **Comment utiliser `venv` :**
 
 - Ouvrez votre dossier de travail depuis le terminal de **Visual Studio Code**.
