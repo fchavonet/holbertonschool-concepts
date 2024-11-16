@@ -148,31 +148,31 @@ Vous pouvez maintenant suivre les instructions des projets sans aucun problème 
 
 ### Bonus :
 
-25. Installer `gcc`:
+25. Installer `gcc` :
 
 ```bash
 apt install gcc -y
 ```
 
-26. Installer `make`:
+26. Installer `make` :
 
 ```bash
 apt install make -y
 ```
 
-27. Installer `python3`:
+27. Installer `python3` :
 
 ```bash
 apt install python3 -y
 ```
 
-28. Installer `pycodestyle`:
+28. Installer `pycodestyle` :
 
 ```bash
 apt install pycodestyle -y
 ```
 
-29. Installer `venv`:
+29. Installer `venv` :
 
 ```bash
 apt install python3-venv -y
