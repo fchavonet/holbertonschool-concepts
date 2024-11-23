@@ -2,7 +2,7 @@
 
 # Mac - Configuration d’une sandbox Ubuntu avec Docker
 
-1. Télécharger et installer [Docker Desktop](https://www.docker.com/products/docker-desktop/).
+1. Télécharger et installer [Docker Desktop](https://www.docker.com/products/docker-desktop/) (ne pas se connecter, à utiliser sans compte actif).
 
 2. Télécharger et installer [Visual Studio Code](https://code.visualstudio.com/download).
 
