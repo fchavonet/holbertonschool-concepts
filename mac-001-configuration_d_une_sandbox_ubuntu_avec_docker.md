@@ -31,7 +31,7 @@ docker pull ubuntu:latest
 8. Créer un nouveau conteneur **Ubuntu** et l'exécuter en mode interactif :
 
 ```bash
-docker run -itd --restart always --name Holberton -v $(pwd):/home/ubuntu/ ubuntu
+docker run -itd --restart always --name Holberton -v "$(pwd):/home/ubuntu/" ubuntu
 ```
 
 **Explications de la commande :**
@@ -172,7 +172,13 @@ apt install python3 -y
 apt install pycodestyle -y
 ```
 
-29. Installer `venv` :
+29. Installer `pip` :
+
+```bash
+apt install python3-pip -y
+```
+
+30. Installer `venv` :
 
 ```bash
 apt install python3-venv -y
