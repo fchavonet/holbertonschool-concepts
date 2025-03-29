@@ -10,7 +10,7 @@
     </summary>
     📄 <a href="#description">Description</a>
     <br>
-    📘 <a href="concepts">Concepts</a>
+    📘 <a href="#concepts">Concepts</a>
     <br>
     📂 <a href="#files-description">Files description</a>
     <br>
