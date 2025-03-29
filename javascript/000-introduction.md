@@ -1,3 +1,5 @@
+<img height="50px" align="right" src="https://raw.githubusercontent.com/fchavonet/fchavonet/main/assets/images/logo-javascript.png" alt="C logo">
+
 # Introduction
 
 Avant de plonger dans le code, il est essentiel de comprendre ce qu’est le JavaScript, à quoi il sert, et pourquoi il est devenu l’un des langages les plus populaires du développement web.
@@ -18,9 +20,9 @@ C'est un langage de programmation principalement utilisé pour rendre les pages 
 - Interopérabilité avec d'autres technologies : JavaScript peut interagir facilement avec des APIs, des bases de données, etc...
 - Temps réel et modernité : idéal pour des applis modernes comme des chats, dashboards en temps réel, interfaces interactives, etc...
 
-> 📌 Java et JavaScript ?
-> Ce sont deux langages totalement différents.
-> Malgré la ressemblance dans leurs noms, ils n'ont ni la même syntaxe, ni le même usage, ni la même origine. Java est un langage compilé, utilisé pour des applications lourdes, mobiles (comme Android) ou serveurs, tandis que JavaScript est un langage interprété, principalement utilisé pour rendre les sites web interactifs.
+> 📌 Java et JavaScript ? <br>
+> Ce sont deux langages totalement différents. <br>
+> Malgré la ressemblance dans leurs noms, ils n'ont ni la même syntaxe, ni le même usage, ni la même origine. Java est un langage compilé, utilisé pour des applications lourdes, mobiles (comme Android) ou serveurs, tandis que JavaScript est un langage interprété, principalement utilisé pour rendre les sites web interactifs. <br>
 > En résumé : Java ≠ JavaScript !
 
 ## ECMAScript, qu’est-ce que c’est ?
