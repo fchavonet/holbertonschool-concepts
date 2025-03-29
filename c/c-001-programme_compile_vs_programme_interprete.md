@@ -55,8 +55,8 @@ La compilation en C est un processus complexe qui se décompose en quatre étape
 Voici un schéma simplifié :
 
 ```bash
-Source C (.c)   -->  Préprocesseur		-->  Fichier prétraité (.i)  
-				-->  Compilation        -->  Fichier assembleur (.s)  
+Source C (.c)   -->  Préprocesseur      -->  Fichier prétraité (.i)  
+                -->  Compilation        -->  Fichier assembleur (.s)  
                 -->  Assemblage         -->  Fichier objet final (.o)  
                 -->  Edition de liens   -->  Exécutable (.out)
 ```
