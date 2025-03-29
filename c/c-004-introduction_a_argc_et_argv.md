@@ -1,4 +1,4 @@
-<img  height="50px" align="right" src="https://raw.githubusercontent.com/fchavonet/fchavonet/refs/heads/main/resources/images/logo-c.png" alt="C logo">
+<img height="50px" align="right" src="https://raw.githubusercontent.com/fchavonet/fchavonet/main/assets/images/logo-c.png" alt="C logo">
 
 # C - Introduction à `argc` et `argv`
 

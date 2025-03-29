@@ -1,10 +1,11 @@
-<img  height="50px" align="right" src="https://raw.githubusercontent.com/fchavonet/fchavonet/refs/heads/main/resources/images/logo-c.png" alt="C logo">
+<img height="50px" align="right" src="https://raw.githubusercontent.com/fchavonet/fchavonet/main/assets/images/logo-c.png" alt="C logo">
 
 # C - Introduction aux pointeurs
 
-Les pointeurs sont une notion fondamentale en langage C, ce petit guide a pour but de vous expliquer en détail ce que sont les pointeurs, comment les utiliser et pourquoi ils sont utiles, le tout avec des exemples clairs pour en faciliter la compréhension.
+Les pointeurs sont une notion fondamentale en langage C, ce guide a pour but de vous expliquer en détail ce que sont les pointeurs, comment les utiliser et pourquoi ils sont utiles, le tout avec des exemples clairs pour en faciliter la compréhension.
 
 ---
+
 ## Qu'est-ce qu'un pointeur ?
 
 Un pointeur est une variable qui contient l'adresse mémoire d'une autre variable.
@@ -15,12 +16,13 @@ Au lieu de stocker une valeur directe (comme un entier ou un caractère), un poi
 Imaginez la mémoire comme une grande armoire avec des tiroirs numérotés (les adresses mémoire). Une variable normale stocke une valeur dans un tiroir spécifique. Un pointeur, lui, ne contient pas directement la valeur, mais le numéro du tiroir où est rangée cette valeur.
 
 ---
+
 ## Pourquoi utiliser des pointeurs ?
 
-- **Manipulation efficace de données** : les pointeurs permettent de manipuler directement la mémoire, ce qui peut améliorer les performances de votre programme.
-- **Passage par référence** : ils permettent de modifier la valeur d'une variable à l'intérieur d'une fonction, ce qui n'est pas possible en passant simplement la variable par valeur.
-- **Allocation dynamique de mémoire** : indispensables pour allouer de la mémoire à l'exécution avec `malloc`, `calloc`, etc. (que vous découvrirez bientôt).
-- **Structures de données complexes** : utiles pour créer des structures comme les listes chaînées, les arbres, les graphes, etc.
+- Manipulation efficace de données : les pointeurs permettent de manipuler directement la mémoire, ce qui peut améliorer les performances de votre programme.
+- Passage par référence : ils permettent de modifier la valeur d'une variable à l'intérieur d'une fonction, ce qui n'est pas possible en passant simplement la variable par valeur.
+- Allocation dynamique de mémoire : indispensables pour allouer de la mémoire à l'exécution avec `malloc`, `calloc`, etc. (que vous découvrirez bientôt).
+- Structures de données complexes : utiles pour créer des structures comme les listes chaînées, les arbres, les graphes, etc.
 
 ---
 _#regular_
