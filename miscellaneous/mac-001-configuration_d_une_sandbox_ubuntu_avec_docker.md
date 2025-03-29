@@ -126,7 +126,7 @@ git config --global user.name "Nom d'utilisateur GitHub"
 git config --global user.email "Email GitHub"
 ```
 
-> Il est important d'utiliser votre vrai pseudonyme GitHub et l'adresse mail exacte de votre compte.
+> 📌 Il est important d'utiliser votre vrai pseudonyme GitHub et l'adresse mail exacte de votre compte.
 
 24. Installer `vim` :
 
