@@ -38,6 +38,7 @@ This initiative is above all a way to make technical education more accessible, 
 - [Introduction aux pointeurs](./c/c-002-introduction_aux_pointeurs.md)
 - [La RAM](./c/c-003-la_ram.md)
 - [Introduction à `argc` et `argv`](./c/c-004-introduction_a_argc_et_argv.md)
+- [Introduction aux listes chaînées](./c/c-005-introduction_aux_listes_chainees.md)
 
 ### JavaScript
 

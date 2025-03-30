@@ -16,23 +16,31 @@ Imaginez une file de wagons de train transportant des marchandises (les données
 
 ## Différence entre liste simplement chaînée et liste doublement chaînée
 
-**Liste simplement chaînée**
+### Liste simplement chaînée
 
 - Structure : chaque nœud contient des données et un pointeur vers le nœud suivant.
 - Navigation : se fait dans un seul sens (de la tête vers la fin).
 - Utilisation mémoire : moins de mémoire utilisée car il y a un seul pointeur par nœud.
 
 <p align="center">
-    <img src="./assets/images/singly_linked_list.png">
+    <picture>
+        <source media="(prefers-color-scheme: light)" srcset="../assets/images/c/singly_linked_list-light.webp">
+        <source media="(prefers-color-scheme: dark)" srcset="../assets/images/c/singly_linked_list-dark.webp">
+        <img src="../assets/images/c/singly_linked_list-light.webp" alt="Schéma fonctionnel">
+    </picture>
 </p>
 
-**Liste doublement chaînée**
+### Liste doublement chaînée
 - Structure : chaque nœud contient des données, un pointeur vers le nœud précédent et un pointeur vers le nœud suivant.
 - Navigation : possible dans les deux sens (avant et arrière).
 - Utilisation mémoire : utilise plus de mémoire à cause du pointeur supplémentaire.
 
 <p align="center">
-    <img src="./assets/images/doubly_linked_list.png">
+    <picture>
+        <source media="(prefers-color-scheme: light)" srcset="../assets/images/c/doubly_linked_list-light.webp">
+        <source media="(prefers-color-scheme: dark)" srcset="../assets/images/c/doubly_linked_list-dark.webp">
+        <img src="../assets/images/c/doubly_linked_list-light.webp" alt="Schéma fonctionnel">
+    </picture>
 </p>
 
 Dans une liste doublement chaînée, les wagons du train ont des attelages à l'avant et à l'arrière, ce qui permet de se déplacer dans les deux directions le long du train. Les marchandises représentent les données stockées dans chaque nœud.
@@ -66,8 +74,8 @@ typedef struct node_s
 
 **Remarque :**
 
-- Organisation du code : dans une pratique standard, la définition de la structure et les prototypes des fonctions seraient placés dans un fichier d'en-tête (`.h)`, tandis que les implémentations des fonctions seraient dans un fichier source (`.c`).
-- Pour faciliter la lecture, sans les exemples qui suivent, nous intégrerons toutes les parties du code dans un seul fichier afin d'en simplifier la présentation et la compréhension.
+- Organisation du code : dans une pratique standard, la définition de la structure et les prototypes des fonctions seraient placés dans un fichier d'en-tête (`.h`), tandis que les implémentations des fonctions seraient dans un fichier source (`.c`).
+- Pour faciliter la lecture, dans les exemples qui suivent, nous intégrerons toutes les parties du code dans un seul fichier afin d'en simplifier la présentation et la compréhension.
 
 ---
 
@@ -111,7 +119,7 @@ node_t *create_node(const char *value)
 
 ## Insertion des nœuds dans la liste
 
-**Insertion en tête**
+### Insertion en tête
 
 ```c
 void insert_at_head(node_t **head, const char *value)
@@ -129,7 +137,7 @@ void insert_at_head(node_t **head, const char *value)
 }
 ```
 
-**Insertion en fin**
+### Insertion en fin
 
 ```c
 void insert_at_tail(node_t **head, const char *value)
@@ -432,33 +440,35 @@ void free_list(node_t *head)
 
 1. Création de la liste initiale :
 - On insère "A", "B", "C", "D" à la fin de la liste pour obtenir :
-```c
+
+```bash
 [A] <-> [B] <-> [C] <-> [D]
 ```
 
 2. Insertion de "START" au début :
 - On insère "START" en tête de la liste avec `insert_at_head`.
+<br>
 La liste devient :
 
-```c
+```bash
 [START] <-> [A] <-> [B] <-> [C] <-> [D]
 ````
 
 3. Insertion de "END" à la fin :
 - On insère "END" en fin de liste avec `insert_at_tail` :
 
-```c
+```bash
 [START] <-> [A] <-> [B] <-> [C] <-> [D] <-> [END]
 ````
 
 4. Suppression de "END" :
 - On supprime le nœud contenant "END" avec `delete_node` :
 
-```c
+```bash
 [START] <-> [A] <-> [B] <-> [C] <-> [D]
 ```
 
-Pour faciliter votre compréhension et vous aider à visualiser le fonctionnement des listes doublement chaînées, j'ai réalisé une application web interactive : [Doubly Linked List Visualizer](https://fchavonet.github.io/web-doubly_linked_list_visualizer/)
+Pour faciliter votre compréhension et vous aider à visualiser le fonctionnement des listes doublement chaînées, j'ai réalisé une application web interactive : [Doubly Linked List Visualizer](https://fchavonet.github.io/web-doubly_linked_list_visualizer/).
 
 Cette application vous permet de :
 
