@@ -35,6 +35,8 @@ This initiative is above all a way to make technical education more accessible, 
 
 - [Hello World!](./c/c-000-hello_world!.md)
 - [Programme compilé vs programme interprété](./c/c-001-programme_compile_vs_programme_interprete.md)
+- [Introduction aux pointeurs](./c/c-002-introduction_aux_pointeurs.md)
+- [La RAM](./c/c-003-la_ram.md)
 
 ### JavaScript
 
