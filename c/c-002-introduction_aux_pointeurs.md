@@ -2,7 +2,7 @@
 
 # C - Introduction aux pointeurs
 
-Les pointeurs sont une notion fondamentale en langage C, ce guide a pour but de vous expliquer en détail ce que sont les pointeurs, comment les utiliser et pourquoi ils sont utiles, le tout avec des exemples clairs pour en faciliter la compréhension.
+Les pointeurs sont une notion fondamentale en langage C, ce guide a pour but de vous expliquer en détail ce que sont les pointeurs, comment les utiliser et pourquoi ils sont utiles, avec des exemples clairs pour en faciliter la compréhension.
 
 ---
 
@@ -13,7 +13,7 @@ Au lieu de stocker une valeur directe (comme un entier ou un caractère), un poi
 
 **Illustration :**
 
-Imaginez la mémoire comme une grande armoire avec des tiroirs numérotés (les adresses mémoire). Une variable normale stocke une valeur dans un tiroir spécifique. Un pointeur, lui, ne contient pas directement la valeur, mais le numéro du tiroir où est rangée cette valeur.
+Imaginez la mémoire comme une grande armoire avec des tiroirs numérotés (les adresses mémoire). Une variable normale stocke une valeur dans un tiroir spécifique. Un pointeur, lui, ne contient pas directement la valeur, mais le numéro du tiroir où est rangée cette valeur (c'est-à-dire l'adresse mémoire).
 
 ---
 
@@ -25,7 +25,7 @@ Imaginez la mémoire comme une grande armoire avec des tiroirs numérotés (les 
 - Structures de données complexes : utiles pour créer des structures comme les listes chaînées, les arbres, les graphes, etc.
 
 ---
-_#regular_
+
 ## Comment déclarer un pointeur ?
 
 Pour déclarer un pointeur, vous utilisez l'opérateur `*` lors de la déclaration de la variable.
@@ -41,7 +41,7 @@ float *pointeur_float;
 - `float *pointeur_float;` déclare un pointeur vers un flottant.
 
 ---
-_#regular_
+
 ## Obtenir l'adresse d'une variable
 
 Pour obtenir l'adresse mémoire d'une variable, on utilise l'opérateur `&`.
@@ -55,7 +55,7 @@ int *pointeur = &nombre;
 - `pointeur` contient maintenant l'adresse de `nombre`.
 
 ---
-_#regular_
+
 ## Accéder à la valeur pointée (déréférencement)
 
 Pour accéder ou modifier la valeur à laquelle un pointeur fait référence, on utilise l'opérateur `*` (déréférencement).
@@ -69,7 +69,7 @@ printf("%d\n", *pointeur);
 ```
 
 ---
-_#regular_
+
 ## Exemple complet
 
 ```c
@@ -108,14 +108,16 @@ int main(void)
 - En modifiant `*pointeur`, on modifie directement `nombre`.
 
 <p align="center">
-	<img src="./assets/images/pointeurs.webp">
+	<img src="../assets/images/c/pointeurs.webp">
 </p>
 
 ---
-_#regular_
+
 ## Pointeurs et tableaux
 
 En C, le nom d'un tableau est un pointeur vers son premier élément.
+<br>
+C’est pour cela qu’on peut passer un tableau à une fonction sans utiliser & : le nom du tableau agit déjà comme un pointeur.
 
 ```c
 int tableau[5] = {1, 2, 3, 4, 5};
@@ -129,10 +131,10 @@ printf("%d\n", *(pointeur + 1)); // 2
 printf("%d\n", pointeur[2]); // 3
 ```
 
-**Note :** `pointeur[2]` est équivalent à `*(pointeur + 2)`.
+> 📌 `pointeur[2]` est équivalent à `*(pointeur + 2)`.
 
 ---
-_#regular_
+
 ## Passage de pointeurs aux fonctions
 
 Les pointeurs permettent de modifier une variable dans une fonction.
@@ -162,7 +164,7 @@ int main(void)
 - La fonction modifie la valeur à cette adresse.
 
 ---
-_#advanced_
+
 ## Allocation dynamique de mémoire
 
 Les pointeurs sont essentiels pour gérer la mémoire dynamique.
@@ -208,7 +210,7 @@ int main(void)
 - Ne pas oublier de libérer la mémoire avec `free`.
 
 ---
-_#advanced_
+
 ## Arithmétique des pointeurs
 
 Vous pouvez effectuer des opérations sur les pointeurs pour naviguer en mémoire.
@@ -226,10 +228,10 @@ pointeur += 2;
 printf("%d\n", *pointeur); // 40
 ```
 
-**Note :** lorsqu'on incrémente un pointeur vers un type `int`, il avance de la taille d'un `int` en mémoire.
+> 📌 Lorsqu'on incrémente un pointeur vers un type `int`, il avance de la taille d'un `int` en mémoire.
 
 ---
-_#regular_
+
 ## Pointeurs NULL
 
 Un pointeur peut ne pointer vers aucune adresse valide. On l'initialise alors à `NULL`.
@@ -243,37 +245,37 @@ if (pointeur == NULL)
 }
 ```
 
-**Important :** toujours vérifier qu'un pointeur n'est pas `NULL` avant de le déréférencer.
+**Important :** toujours vérifier qu'un pointeur n'est pas `NULL` avant de le déréférencer, sinon, vous risquez un segmentation fault (plantage du programme).
 
 ---
-_#regular_ _#advanced_
+
 ## Erreurs courantes
 
-- **Déréférencement d'un pointeur non initialisé :**
+- Déréférencement d'un pointeur non initialisé :
 
 ```c
 int *pointeur;
 *pointeur = 10; // Erreur ! "pointeur" n'a pas d'adresse valide...
 ```
 
-- **Oubli de `&` lors de l'affectation d'une adresse :**
+- Oubli de `&` lors de l'affectation d'une adresse :
 
 ```c
 int nombre = 5;
 int *pointeur = nombre; // Erreur ! Doit être "int *pointeur = &nombre;".
 ```
 
-- **Ne pas libérer la mémoire allouée dynamiquement :**  
+- Ne pas libérer la mémoire allouée dynamiquement :
 	Toujours utiliser `free` pour éviter les fuites de mémoire.
 
 ---
 
 ## Conseils pour bien utiliser les pointeurs
 
-- **Initialiser les pointeurs :** toujours initialiser les pointeurs à une adresse valide ou à `NULL`.
-- **Vérifier les allocations :** après un `malloc`, vérifier que le pointeur n'est pas `NULL`.
-- **Utiliser les pointeurs avec précaution :** une mauvaise manipulation peut entraîner des erreurs difficiles à déboguer.
-- **Commenter votre code :** les pointeurs peuvent rendre le code moins lisible, des commentaires aident à comprendre.
+- Initialiser les pointeurs : toujours initialiser les pointeurs à une adresse valide ou à `NULL`.
+- Vérifier les allocations : après un `malloc`, vérifier que le pointeur n'est pas `NULL`.
+- Utiliser les pointeurs avec précaution : une mauvaise manipulation peut entraîner des erreurs difficiles à déboguer.
+- Commenter votre code : les pointeurs peuvent rendre le code moins lisible, des commentaires aident à comprendre.
 
 ---
 
