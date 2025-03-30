@@ -22,6 +22,7 @@ Imaginez une file de wagons de train transportant des marchandises (les données
 - Navigation : se fait dans un seul sens (de la tête vers la fin).
 - Utilisation mémoire : moins de mémoire utilisée car il y a un seul pointeur par nœud.
 
+<br>
 <p align="center">
     <picture>
         <source media="(prefers-color-scheme: light)" srcset="../assets/images/c/singly_linked_list-light.webp">
@@ -35,6 +36,7 @@ Imaginez une file de wagons de train transportant des marchandises (les données
 - Navigation : possible dans les deux sens (avant et arrière).
 - Utilisation mémoire : utilise plus de mémoire à cause du pointeur supplémentaire.
 
+<br>
 <p align="center">
     <picture>
         <source media="(prefers-color-scheme: light)" srcset="../assets/images/c/doubly_linked_list-light.webp">
