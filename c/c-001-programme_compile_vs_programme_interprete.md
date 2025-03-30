@@ -34,12 +34,12 @@ Un programme interprété est un programme qui est lu et exécuté ligne par lig
 
 ## Différences principales
 
-| Aspect               | Programme compilé                              | Programme interprété                      |
-|----------------------|------------------------------------------------|-------------------------------------------|
-| Traduction du code : | Compilation en un fichier exécutable.          | Exécution directe par un interpréteur.    |
-| Performance :        | Plus rapide (optimisé lors de la compilation). | Moins rapide (traduit à l’exécution).     |
-| Portabilité :        | Dépend de la machine cible.                    | Plus portable (nécessite l’interpréteur). |
-| Exécution :          | Le fichier binaire est autonome.               | Le code source est nécessaire.            |
+| **Aspect**               | **Programme compilé**                          | **Programme interprété**                  |
+|--------------------------|------------------------------------------------|-------------------------------------------|
+| **Traduction du code :** | Compilation en un fichier exécutable.          | Exécution directe par un interpréteur.    |
+| **Performance :**        | Plus rapide (optimisé lors de la compilation). | Moins rapide (traduit à l’exécution).     |
+| **Portabilité :**        | Dépend de la machine cible.                    | Plus portable (nécessite l’interpréteur). |
+| **Exécution :**          | Le fichier binaire est autonome.               | Le code source est nécessaire.            |
 
 ---
 

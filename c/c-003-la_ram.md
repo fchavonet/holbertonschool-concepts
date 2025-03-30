@@ -3,10 +3,10 @@
 # C - La RAM
 
 <p align="center">
-    <img src="./assets/images/ram.webp">
+	<img src="../assets/images/c/ram.webp">
 </p>
 
-La **RAM** (Random Access Memory) est une mémoire temporaire utilisée par l'ordinateur pendant qu'un programme tourne. Elle se vide quand on éteint l'ordinateur. C'est dans cette RAM que se trouvent plusieurs zones de mémoire importantes pour un programme, notamment :
+La RAM (Random Access Memory) est une mémoire temporaire utilisée par l'ordinateur pendant qu'un programme tourne. Elle se vide quand on éteint l'ordinateur. C'est dans cette RAM que se trouvent plusieurs zones de mémoire importantes pour un programme, notamment :
 
 1. La zone de code.
 2. La zone des données statiques.
@@ -19,8 +19,8 @@ La **RAM** (Random Access Memory) est une mémoire temporaire utilisée par l'
 
 Elle est l'endroit où sont stockées les instructions du programme (le code). Elle contient les instructions que l’ordinateur exécute pour faire fonctionner le programme.
 
-- **Lecture seule** : la zone de code est généralement en lecture seule pour éviter qu’on ne modifie le programme par erreur pendant son exécution.
-- **Usage** : elle contient les instructions que le processeur lit et exécute, ligne après ligne.
+- Lecture seule : la zone de code est généralement en lecture seule pour éviter qu’on ne modifie le programme par erreur pendant son exécution.
+- Usage : elle contient les instructions que le processeur lit et exécute, ligne après ligne.
 
 ---
 
@@ -28,9 +28,9 @@ Elle est l'endroit où sont stockées les instructions du programme (le code). E
 
 Elle est utilisée pour stocker les informations qui durent toute la vie du programme.
 
-- **Variables globales** : les variables déclarées en dehors des fonctions, qui peuvent être utilisées partout dans le programme.
-- **Variables statiques** : les variables locales marquées `static` qui gardent leur valeur entre les appels de la fonction.
-- **Constantes** : les valeurs marquées `const` qui ne changent pas pendant l’exécution.
+- Variables globales : les variables déclarées en dehors des fonctions, qui peuvent être utilisées partout dans le programme.
+- Variables statiques : les variables locales marquées `static` qui gardent leur valeur entre les appels de la fonction.
+- Constantes : les valeurs marquées `const` qui ne changent pas pendant l’exécution.
 
 Ces données sont présentes dans la RAM dès le démarrage du programme et y restent jusqu’à la fin.
 
@@ -38,31 +38,31 @@ Ces données sont présentes dans la RAM dès le démarrage du programme et y re
 
 ## La Stack (pile)
 
-C'est une autre partie de la RAM, utilisée pour les données temporaires, comme les variables locales des fonctions. Elle fonctionne comme une pile d’assiettes en cuisine. À chaque fois qu’on entre dans la cuisine (appelle une fonction dans le programme), on pose une assiette pour se rappeler ce qu’on fait. Quand on a fini, on enlève l’assiette (la mémoire est libérée).
+C'est une autre partie de la RAM, utilisée pour les données temporaires, comme les variables locales des fonctions. Elle fonctionne comme une pile d’assiettes en cuisine. À chaque fois qu’on entre dans la cuisine (appelle une fonction dans le programme), on pose une assiette avec tout ce dont on a besoin (les variables locales et l’adresse de retour). Quand on a fini, on enlève l’assiette (la mémoire est libérée).
 
-- **Fonctionnement** : à chaque fois qu'une fonction est appelée, une "frame" est ajoutée à la Stack, contenant les variables locales et l'adresse de retour. Quand la fonction se termine, la frame est retirée de la Stack.
-- **Avantages** : rapide et automatique, car la mémoire est libérée automatiquement quand une fonction se termine et s'organise d'elle-même (dernier entré, premier sorti).
-- **Limites** : la mémoire de la Stack est limitée. Si trop de mémoire est utilisée, on peut provoquer un `stack overflow`(dépassement de la pile).
+- Fonctionnement : à chaque fois qu'une fonction est appelée, une "frame" est ajoutée à la Stack, contenant les variables locales et l'adresse de retour. Quand la fonction se termine, la frame est retirée de la Stack.
+- Avantages : rapide et automatique, car la mémoire est libérée automatiquement quand une fonction se termine et s'organise d'elle-même (dernier entré, premier sorti).
+- Limites : la mémoire de la Stack est limitée. Si trop de mémoire est utilisée, on peut provoquer un `stack overflow`(dépassement de la pile).
 
 ---
 
 ## La Heap (tas)
 
-C'est encore une autre zone de la RAM, utilisée pour les données qu'on veut garder plus longtemps, même après la fin d'une fonction. Elle fonctionne comme un grand tiroir dans lequel on range des objets à la main. On utilise `malloc` pour y mettre quelque chose et `free` pour le ranger.
+C'est encore une autre zone de la RAM, utilisée pour les données qu'on veut garder plus longtemps, même après la fin d'une fonction. Elle fonctionne comme une grande armoire dans laquelle on range des boites à la main. On utilise `malloc` pour réserver une place et `free` pour la libérer ensuite.
 
-- **Fonctionnement** : on utilise la heap pour allouer de la mémoire de manière dynamique, quand on veut garder les données disponibles plus longtemps. On doit libérer l’espace nous-mêmes en utilisant `free`. Si on oublie de le faire, cela crée une fuite de mémoire.
-- **Avantages** : on peut allouer une grande quantité de mémoire, adaptée aux besoins, même si on ne connaît pas la taille à l’avance (flexibilité).
-- **Limites** : moins rapide mais avec généralement plus d'espace que la Stack car l’allocation et la libération sont manuelles.
+- Fonctionnement : on utilise la heap pour allouer de la mémoire de manière dynamique, quand on veut garder les données disponibles plus longtemps. On doit libérer l’espace nous-mêmes en utilisant `free`. Si on oublie de le faire, cela crée une fuite de mémoire.
+- Avantages : on peut allouer une grande quantité de mémoire, adaptée aux besoins, même si on ne connaît pas la taille à l’avance (flexibilité).
+- Limites : moins rapide mais avec généralement plus d'espace que la Stack car l’allocation et la libération sont manuelles.
 
 ---
 
-## Shéma fonctionnel
+## Schéma fonctionnel
 
 <p align="center">
     <picture>
-        <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/fchavonet/holbertonschool-concepts/refs/heads/main/assets/images/shema_fonctionnel-light.png">
-        <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/fchavonet/holbertonschool-concepts/refs/heads/main/assets/images/shema_fonctionnel-dark.png">
-        <img src="https://raw.githubusercontent.com/fchavonet/holbertonschool-concepts/refs/heads/main/assets/images/shema_fonctionnel-light.png" alt="Shéma fonctionnel">
+        <source media="(prefers-color-scheme: light)" srcset="../assets/images/c/shema_fonctionnel-light.webp">
+        <source media="(prefers-color-scheme: dark)" srcset="../assets/images/c/shema_fonctionnel-dark.webp">
+        <img src="../assets/images/c/shema_fonctionnel-light.webp" alt="Schéma fonctionnel">
     </picture>
 </p>
 
@@ -70,13 +70,13 @@ C'est encore une autre zone de la RAM, utilisée pour les données qu'on veut ga
 
 ## Comparaison simplifiée
 
-| **Caractéristique** | **Zone de code**          | **Zone des données statiques**            | **Stack (pile)**                | **Heap (tas)**                  |
-| :-----------------: | :-----------------------: | :---------------------------------------: | :-----------------------------: | :-----------------------------: |
-| **UTILISATION**     | Instructions du programme | Variables globales, statiques, constantes | Variables locales               | Allocation dynamique (`malloc`) |
-| **GESTION**         | Lecture seule             | Automatique                               | Automatique                     | Manuelle (`free`)               |
-| **DURÉE DE VIE**    | Tout le programme         | Tout le programme                         | Durée de la fonction            | Jusqu’à `free`                  |
-| **VITESSE**         | Rapide                    | Rapide                                    | Rapide                          | Plus lente                      |
-| **LIMITE**          | Taille fixe               | Taille fixe                               | Taille limitée                  | Fuites si `free` oublié         |
+| **Caractéristique**   | **Zone de code**          | **Zone des données statiques**            | **Stack (pile)**                | **Heap (tas)**                  |
+| --------------------- | ------------------------- | ----------------------------------------- | ------------------------------- | ------------------------------- |
+| **UTILISATION :**     | Instructions du programme | Variables globales, statiques, constantes | Variables locales               | Allocation dynamique (`malloc`) |
+| **GESTION :**         | Lecture seule             | Automatique                               | Automatique                     | Manuelle (`free`)               |
+| **DURÉE DE VIE :**    | Tout le programme         | Tout le programme                         | Durée de la fonction            | Jusqu’à `free`                  |
+| **VITESSE :**         | Rapide                    | Rapide                                    | Rapide                          | Plus lente                      |
+| **LIMITE :**          | Taille fixe               | Taille fixe                               | Taille limitée                  | Fuites si `free` oublié         |
 
 ---
 
@@ -121,10 +121,10 @@ int main(void)
 
 Dans cet exemple :
 
-- **`globalVar`** est une variable globale, stockée dans la zone des données statiques. Elle est accessible partout dans le programme.
-- **`staticVar`** est une variable statique dans `fonction`, donc elle est aussi stockée dans la zone des données statiques et garde sa valeur entre les appels.
-- **`stackVar`** est une variable locale dans `fonction`, stockée dans la stack. Elle est automatiquement supprimée quand la fonction se termine.
-- **`heapVar`** est allouée dynamiquement dans la heap avec `malloc`. Elle reste en mémoire jusqu'à ce qu'on utilise `free`pour la libérer.
+- `globalVar` : est une variable globale, stockée dans la zone des données statiques. Elle est accessible partout dans le programme.
+- `staticVar` : est une variable statique dans `fonction`, donc elle est aussi stockée dans la zone des données statiques et garde sa valeur entre les appels.
+- `stackVar` : est une variable locale dans `fonction`, stockée dans la stack. Elle est automatiquement supprimée quand la fonction se termine.
+- `heapVar` : est allouée dynamiquement dans la heap avec `malloc`. Elle reste en mémoire jusqu'à ce qu'on utilise `free` pour la libérer.
 
 ---
 
@@ -132,9 +132,9 @@ Dans cet exemple :
 
 En résumé, la RAM est organisée en différentes zones pour optimiser la gestion de la mémoire pendant l’exécution d’un programme :
 
-- **La zone de code** contient les instructions du programme.
-- **La zone des données statiques** garde les informations nécessaires tout au long du programme, comme les variables globales et constantes.
-- **La stack** est utilisée pour les variables temporaires dans les fonctions et est gérée automatiquement.
-- **La heap** permet l'allocation de mémoire dynamique, gérée manuellement avec `malloc` et `free`.
+- La zone de code contient les instructions du programme.
+- La zone des données statiques garde les informations nécessaires tout au long du programme, comme les variables globales et constantes.
+- La stack est utilisée pour les variables temporaires dans les fonctions et est gérée automatiquement.
+- La heap permet l'allocation de mémoire dynamique, gérée manuellement avec `malloc` et `free`.
 
 Cette organisation rend le programme plus efficace et permet une utilisation optimisée de la mémoire selon les besoins.
