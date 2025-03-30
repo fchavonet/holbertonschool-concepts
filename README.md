@@ -31,7 +31,7 @@ This initiative is above all a way to make technical education more accessible, 
 
 ## 📘 <span id="concepts">Concepts</span>
 
-### C
+### <img width="50px" src="https://raw.githubusercontent.com/fchavonet/fchavonet/main/assets/images/logo-c.png" alt="C logo">
 
 - [Hello World!](./c/c-000-hello_world!.md)
 - [Programme compilé vs programme interprété](./c/c-001-programme_compile_vs_programme_interprete.md)
@@ -40,11 +40,11 @@ This initiative is above all a way to make technical education more accessible, 
 - [Introduction à `argc` et `argv`](./c/c-004-introduction_a_argc_et_argv.md)
 - [Introduction aux listes chaînées](./c/c-005-introduction_aux_listes_chainees.md)
 
-### JavaScript
+### <img width="50px" src="https://raw.githubusercontent.com/fchavonet/fchavonet/main/assets/images/logo-javascript.png" alt="JavaScript logo">
 
 - [Introduction](./javascript/000-introduction.md)
 
-### Miscellaneous
+### <img width="50px" src="https://raw.githubusercontent.com/fchavonet/fchavonet/main/assets/images/logo-miscellaneous.png" alt="Miscellaneous logo">
 
 - [Configuration d’une sandbox Ubuntu avec Docker](./miscellaneous/mac-001-configuration_d_une_sandbox_ubuntu_avec_docker.md)
 
