@@ -37,6 +37,7 @@ This initiative is above all a way to make technical education more accessible, 
 - [Programme compilé vs programme interprété](./c/c-001-programme_compile_vs_programme_interprete.md)
 - [Introduction aux pointeurs](./c/c-002-introduction_aux_pointeurs.md)
 - [La RAM](./c/c-003-la_ram.md)
+- [Introduction à `argc` et `argv`](./c/c-004-introduction_a_argc_et_argv.md)
 
 ### JavaScript
 

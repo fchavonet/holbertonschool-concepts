@@ -7,10 +7,11 @@ Ces arguments peuvent être utilisés par le programme pour modifier son comport
 Les paramètres `argc` et `argv` de la fonction `main` permettent de gérer ces arguments.
 
 ---
+
 ## Qu'est-ce que `argc` et `argv` ?
 
-- **`argc`** : c'est un entier qui représente le **nombre d'arguments** passés au programme, y compris le nom du programme lui-même.
-- **`argv`** : c'est un tableau de chaînes de caractères (`char *argv[]`), où chaque élément est un **argument** passé au programme.
+- **`argc`** : c'est un entier qui représente le nombre d'arguments passés au programme, y compris le nom du programme lui-même.
+- **`argv`** : c'est un tableau de chaînes de caractères (`char *argv[]`), où chaque élément est un argument passé au programme.
 
 **En résumé :**
 
@@ -18,6 +19,7 @@ Les paramètres `argc` et `argv` de la fonction `main` permettent de gére
 - `argv` (argument vector) est un tableau contenant les arguments sous forme de chaînes de caractères.
 
 ---
+
 ## Déclaration de la fonction `main` avec `argc` et `argv`
 
 Pour utiliser `argc` et `argv`, la fonction `main` doit être déclarée comme suit :
@@ -29,26 +31,29 @@ int main(int argc, char *argv[])
 }
 ```
 
----
-_#regular_
-## Comment fonctionnent `argc` et `argv` ?
+> 📌 `char *argv[]` est équivalent à `char **argv`.
 
-### Exemple de base
+---
+
+## Comment fonctionnent `argc` et `argv` ?
 
 Imaginons que vous exécutez votre programme comme ceci :
 
-```
+```bash
 ./mon_programme argument1 argument2 argument3
 ```
 
-- **`argc`** vaudra `4` (le nom du programme est compté comme le premier argument).
+- **`argc`** vaudra `4`.
 - **`argv`** sera un tableau contenant :
 	- `argv[0]` : `"./mon_programme"`
     - `argv[1]` : `"argument1"`
     - `argv[2]` : `"argument2"`
     - `argv[3]` : `"argument3"`
 
+> 📌 `argc` compte le nom du programme lui-même (`argv[0]`) dans le total, d'où le chiffre 4.
+
 ---
+
 ## Exemple pratique
 
 Voici un programme qui affiche tous les arguments passés en ligne de commande :
@@ -69,37 +74,16 @@ int main(int argc, char *argv[])
 }
 ```
 
-### Explication :
+**Explication :**
 
 - On affiche le nombre total d'arguments (`argc`).
 - On parcourt le tableau `argv` pour afficher chaque argument.
 
-### Exécution :
-
-Si vous compilez ce programme et l'exécutez avec :
-
-```
-./mon_programme Hello World
-```
-
-**Sortie :**
-
-```
-Nombre d'arguments : 3
-Argument 0 : ./mon_programme
-Argument 1 : Hello
-Argument 2 : World
-```
-
 ---
-_#regular_
+
 ## Utilisation des arguments dans le programme
 
-### Conversion des arguments
-
 Les arguments dans `argv` sont des chaînes de caractères (`char *`). Si vous avez besoin d'un entier ou d'un flottant, vous devez les convertir.
-
-**Exemple :**
 
 ```c
 #include <stdio.h>
@@ -123,31 +107,17 @@ int main(int argc, char *argv[])
 }
 ```
 
-### Explication :
+**Explication :**
 
 - On vérifie que l'utilisateur a passé exactement 2 arguments (en plus du nom du programme).
 - `atoi` (ASCII to Integer) convertit une chaîne de caractères en entier.
 - On calcule la somme des deux nombres et on l'affiche.
 
-### Exécution :
-
-```
-./mon_programme 5 7
-```
-
-**Sortie :**
-
-```
-La somme de 5 et 7 est 12
-```
-
 ---
-_#regular_
+
 ## Gestion des erreurs
 
 Il est important de gérer les cas où l'utilisateur n'entre pas les arguments attendus.
-
-### Exemple avec message d'erreur :
 
 ```c
 #include <stdio.h>
@@ -167,18 +137,16 @@ int main(int argc, char *argv[])
 }
 ```
 
-### Explication :
+**Explication :**
 
 - On utilise `fprintf` avec `stderr` pour afficher les messages d'erreur.
 - On retourne `1` pour indiquer que le programme s'est terminé avec une erreur.
 
 ---
-_#regular_
+
 ## Parcourir tous les arguments
 
 Si vous ne savez pas combien d'arguments seront passés, vous pouvez les parcourir tous.
-
-### Exemple :
 
 ```c
 #include <stdio.h>
@@ -196,28 +164,11 @@ int main(int argc, char *argv[])
 }
 ```
 
-### Exécution :
-
-```
-./mon_programme pomme banane orange
-```
-
-**Sortie :**
-
-```
-Liste des arguments :
-- pomme
-- banane
-- orange
-```
-
 ---
-_#advanced_
+
 ## Utilisation avancée : Analyse des options
 
 Les programmes utilisent souvent des options pour modifier leur comportement (`-h`, `--version`, etc.).
-
-### Exemple simple :
 
 ```c
 #include <stdio.h>
@@ -249,28 +200,14 @@ int main(int argc, char *argv[])
 }
 ```
 
-### Explication :
+**Explication :**
 
 - On parcourt les arguments pour vérifier si `-h` ou `--help` est présent.
 - Si c'est le cas, on affiche l'aide et on termine le programme.
 
-### Exécution :
-
-```
-./mon_programme --help
-```
-
-**Sortie :**
-
-```
-Usage : ./mon_programme [options]
-Options :
-  -h, --help    Afficher cette aide
-```
-
 ---
-_#advanced_
-## Exemple : Calculatrice simple
+
+## Exemple : calculatrice simple
 
 Créons une calculatrice qui prend une opération en argument.
 
@@ -322,41 +259,31 @@ int main(int argc, char *argv[])
 }
 ```
 
-### Explication :
+> 📌 Attention, si vous testez le programme aves la multiplication, il est conseillé d’entourer `*` de guillemets pour éviter les soucis dans un shell.
+
+**Explication :**
 
 - On attend trois arguments : un nombre, un opérateur, un autre nombre.
 - `atof` convertit une chaîne en `double`.
 - On utilise un `switch` pour déterminer l'opération à effectuer.
 - On gère la division par zéro.
 
-### Exécution :
-
-```
-./calculatrice 10 / 2
-```
-
-**Sortie :**
-
-```
-Résultat : 5.000000
-```
-
 ---
 
 ## Notes importantes
 
-- **Indexation de `argv` :**
+- Indexation de `argv` :
     - `argv[0]` est toujours le nom du programme.
     - Les arguments commencent à `argv[1]`.
-- **Vérification des arguments :**
+- Vérification des arguments :
     - Toujours vérifier que le nombre d'arguments est correct avant de les utiliser.
     - Fournir des messages d'erreur clairs à l'utilisateur.
-- **Conversion des types :**
+- Conversion des types :
     - Les arguments sont des chaînes de caractères.
     - Utilisez `atoi`, `atol`, `atof` ou `strtol`, `strtod` pour les convertir.
 
 ---
-_#advanced_
+
 ## Fonctions de conversion
 
 - **`atoi(char *str)`** : convertit une chaîne en `int`.
@@ -364,8 +291,6 @@ _#advanced_
 - **`atof(char *str)`** : convertit une chaîne en `double`.
 - **`strtol(char *str, char **endptr, int base)`** : convertit une chaîne en `long` avec plus de contrôle.
 - **`strtod(char *str, char **endptr)`** : convertit une chaîne en `double` avec plus de contrôle.
-
-**Exemple avec `strtol` :**
 
 ```c
 #include <stdio.h>
@@ -394,7 +319,7 @@ int main(int argc, char *argv[])
 }
 ```
 
-### Explication :
+**Explication :**
 
 - `strtol` permet de détecter si la conversion s'est bien passée en vérifiant si `*endptr` est `'\0'`.
 
@@ -402,8 +327,8 @@ int main(int argc, char *argv[])
 
 ## Les limitations de `argc` et `argv`
 
-- **Taille des arguments :** les arguments de la ligne de commande ont une taille maximale qui dépend du système d'exploitation.
-- **Sécurité :** soyez vigilant avec les entrées de l'utilisateur. Ne faites pas confiance aux arguments sans les valider.
+- Taille des arguments : les arguments de la ligne de commande ont une taille maximale qui dépend du système d'exploitation.
+- Sécurité : soyez vigilant avec les entrées de l'utilisateur. Ne faites pas confiance aux arguments sans les valider.
 
 ---
 
@@ -417,6 +342,6 @@ L'utilisation de `argc` et `argv` est essentielle pour créer des programmes
 
 **Conseils pour maîtriser `argc` et `argv` :**
 
-- **Pratiquez :** écrivez des programmes qui utilisent différents types d'arguments.
-- **Validez les entrées :** toujours vérifier et valider les arguments pour éviter les erreurs ou les failles de sécurité.
-- **Lisez la documentation :** les fonctions comme `strtol` offrent des options avancées pour gérer les conversions.
+- Pratiquez : écrivez des programmes qui utilisent différents types d'arguments.
+- Validez les entrées : toujours vérifier et valider les arguments pour éviter les erreurs ou les failles de sécurité.
+- Lisez la documentation : les fonctions comme `strtol` offrent des options avancées pour gérer les conversions.
