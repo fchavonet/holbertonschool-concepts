@@ -470,7 +470,7 @@ La liste devient :
 [START] <-> [A] <-> [B] <-> [C] <-> [D]
 ```
 
-> 📌 Pour faciliter votre compréhension et vous aider à visualiser le fonctionnement des listes doublement chaînées, j'ai réalisé une application web interactive : [Doubly Linked List Visualizer](https://fchavonet.github.io/web-doubly_linked_list_visualizer/).
+Pour faciliter votre compréhension et vous aider à visualiser le fonctionnement des listes doublement chaînées, j'ai réalisé une application web interactive : [Doubly Linked List Visualizer](https://fchavonet.github.io/web-doubly_linked_list_visualizer/).
 
 Cette application vous permet de :
 
