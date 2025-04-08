@@ -39,6 +39,7 @@ This initiative is above all a way to make technical education more accessible, 
 - [La RAM](./c/c-003-la_ram.md)
 - [Introduction à `argc` et `argv`](./c/c-004-introduction_a_argc_et_argv.md)
 - [Introduction aux listes chaînées](./c/c-005-introduction_aux_listes_chainees.md)
+- [Introduction aux arbres binaires](./c/c-006-introduction_aux_arbres_binaires.md)
 
 ### <img width="50px" src="https://raw.githubusercontent.com/fchavonet/fchavonet/main/assets/images/logo-javascript.png" alt="JavaScript logo">
 
