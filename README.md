@@ -35,11 +35,12 @@ This initiative is above all a way to make technical education more accessible, 
 
 - [Hello World!](./c/c-000-hello_world!.md)
 - [Programme compilé vs programme interprété](./c/c-001-programme_compile_vs_programme_interprete.md)
-- [Introduction aux pointeurs](./c/c-002-introduction_aux_pointeurs.md)
-- [La RAM](./c/c-003-la_ram.md)
-- [Introduction à `argc` et `argv`](./c/c-004-introduction_a_argc_et_argv.md)
-- [Introduction aux listes chaînées](./c/c-005-introduction_aux_listes_chainees.md)
-- [Introduction aux arbres binaires](./c/c-006-introduction_aux_arbres_binaires.md)
+- [Variables et types de données](./c/c-002-variables_et_types_de_données.md)
+- [Introduction aux pointeurs](./c/c-003-introduction_aux_pointeurs.md)
+- [La RAM](./c/c-004-la_ram.md)
+- [Introduction à `argc` et `argv`](./c/c-005-introduction_a_argc_et_argv.md)
+- [Introduction aux listes chaînées](./c/c-006-introduction_aux_listes_chainees.md)
+- [Introduction aux arbres binaires](./c/c-007-introduction_aux_arbres_binaires.md)
 
 ### <img width="50px" src="https://raw.githubusercontent.com/fchavonet/fchavonet/main/assets/images/logo-javascript.png" alt="JavaScript logo">
 
