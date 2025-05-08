@@ -40,7 +40,7 @@ cd holbertonschool-test_github_api
 python3 -m venv venv
 ```
 
-Cette commande crée un dossier `venv/` contenant une copie de l’interpréteur Python et de `pip`.
+Cette commande crée un dossier `venv/` contenant une copie de l’interpréteur Python et de pip.
 <br>
 Le `-m` indique que l’on exécute le module nommé `venv` et pas un fichier script de base.
 
@@ -66,7 +66,7 @@ source venv/bin/activate
 
 Une fois activé, vous verrez le préfixe `(venv)` devant votre invite de commande : cela confirme que vous travaillez dans l’environnement isolé.
 
-Après création de l’environnement, il est souvent utile de mettre à jour `pip` :
+Après création de l’environnement, il est souvent utile de mettre à jour pip :
 
 ```bash
 pip install --upgrade pip
@@ -150,6 +150,12 @@ Le prompt revient à la normale, Python et pip pointent de nouveau vers votre in
 Sur une autre machine (ou après avoir supprimé le dossier `venv` du répertoire de test) :
 
 ```bash
+rm -r venv
+```
+
+Si vous tentez de relancer votre script (`test_github_api.py`) sans recréer l’environnement, une erreur devrait se produire, car le module requests ne sera plus accessible.
+
+```bash
 python3 -m venv venv
 ```
 
@@ -163,7 +169,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Cela installera l’ensemble des packages listés dans le fichier `requirements.txt` (dans notre exemple, le package `requests`).
+Cela installera l’ensemble des packages listés dans le fichier `requirements.txt` (dans notre exemple, le package `requests`), et le script (`test_github_api.py`) devrait fonctionner de nouveau.
 
 ---
 
