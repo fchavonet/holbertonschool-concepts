@@ -46,6 +46,10 @@ This initiative is above all a way to make technical education more accessible, 
 
 - [Introduction](./javascript/000-introduction.md)
 
+### <img width="50px" src="https://raw.githubusercontent.com/fchavonet/fchavonet/main/assets/images/logo-python.png" alt="Python logo">
+
+- [Création d’un environnement virtuel avec `venv`](./python/python-000-creation_d_un_environnement_virtuel_avec_venv.md)
+
 ### <img width="50px" src="https://raw.githubusercontent.com/fchavonet/fchavonet/main/assets/images/logo-miscellaneous.png" alt="Miscellaneous logo">
 
 - [Configuration d’une sandbox Ubuntu avec Docker](./miscellaneous/mac-001-configuration_d_une_sandbox_ubuntu_avec_docker.md)
@@ -57,6 +61,7 @@ This initiative is above all a way to make technical education more accessible, 
 | `assets`        | Contains the resources required for the repository. |
 | `c`             | C programming concepts in French.                   | 
 | `javascript`    | Javascript programming concepts in French.          |
+| `python`        | Python programming concepts in French.              |
 | `miscellaneous` | Other general concepts                              |
 | `README.md`     | The readme file you are currently reading 😉.       |
 
