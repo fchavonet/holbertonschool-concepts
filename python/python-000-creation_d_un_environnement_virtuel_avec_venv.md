@@ -1,6 +1,6 @@
 <img height="50px" align="right" src="https://raw.githubusercontent.com/fchavonet/fchavonet/main/assets/images/logo-python.png" alt="Python logo">
 
-# Python - Création et gestion d’un environnement virtuel avec `venv`
+# Python - Création d’un environnement virtuel avec `venv`
 
 Quand on travaille sur plusieurs projets Python, un environnement virtuel permet d’isoler les dépendances de votre projet du reste de votre système. En créant un environnement dédié, vous vous assurez que les bibliothèques installées pour ce projet n’affectent pas les autres (et vice-versa). Python fournit pour cela le module `venv` qui permet de créer un environnement virtuel dans un dossier donné.
 
