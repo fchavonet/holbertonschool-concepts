@@ -147,13 +147,13 @@ Le prompt revient à la normale, Python et pip pointent de nouveau vers votre in
 
 ## Recréer l’environnement ailleurs
 
-Sur une autre machine (ou après avoir supprimé le dossier `venv` du répertoire de test) :
+Sur une autre machine ou après avoir supprimé le dossier `venv` du répertoire de test (exemple ci-dessous) :
 
 ```bash
 rm -r venv
 ```
 
-Si vous tentez de relancer votre script (`test_github_api.py`) sans recréer l’environnement, une erreur devrait se produire, car le module requests ne sera plus accessible.
+Si vous tentez de relancer votre script (`test_github_api.py`) sans recréer l’environnement, une erreur devrait se produire, car le module `requests` ne sera plus accessible.
 
 ```bash
 python3 -m venv venv
