@@ -52,11 +52,11 @@ Nous allons concevoir une API RESTful minimaliste pour gérer une liste de tâch
 
 ### Pseudocode
 
-<p align="center">
+<p align="left">
     <picture>
         <source media="(prefers-color-scheme: dark)" srcset="../assets/images/notion/pseudocode-toto-light.webp">
         <source media="(prefers-color-scheme: light)" srcset="../assets/images/notion/pseudocode-toto-dark.webp">
-        <img src="../assets/images/notion/pseudocode-toto-light.webp" alt="Screenshots">
+        <img src="../assets/images/notion/pseudocode-toto-light.webp" width="600" alt="Screenshots">
     </picture>
 </p>
 
