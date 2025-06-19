@@ -228,12 +228,12 @@ python todo_api.py
 ```
 
 - Documentation Swagger : [http://127.0.0.1:3000/](http://127.0.0.1:3000/)
-- Data : [http://127.0.0.1:3000/todos/](http://127.0.0.1:3000/todos/)
+- JSON (data) : [http://127.0.0.1:3000/todos/](http://127.0.0.1:3000/todos/)
 
 4. Endpoints disponibles :
 
 | **Méthode** | **URL**     | **Description**                  |
-| ----------- | ----------- | -------------------------------- |
+| :---------: | :---------: | -------------------------------- |
 | GET         | `/todos/`   | Liste toutes les tâches.         |
 | POST        | `/todos/`   | Crée une nouvelle tâche.         |
 | GET         | `/todos/id` | Récupère une tâche spécifique.   |
