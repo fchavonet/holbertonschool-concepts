@@ -1,4 +1,8 @@
-# Introduction
+<img height="50px" align="right" src="https://raw.githubusercontent.com/fchavonet/fchavonet/main/assets/images/logo-miscellaneous.png" alt="Miscellaneous logo">
+
+# Le pseudocode ?
+
+## Introduction
 
 Avant d’écrire une seule ligne de code, il est fondamental de penser comme un développeur.
 <br>

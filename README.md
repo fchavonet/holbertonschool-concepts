@@ -53,6 +53,7 @@ This initiative is above all a way to make technical education more accessible, 
 ### <img width="50px" src="https://raw.githubusercontent.com/fchavonet/fchavonet/main/assets/images/logo-miscellaneous.png" alt="Miscellaneous logo">
 
 - [Configuration d’une sandbox Ubuntu avec Docker](./miscellaneous/mac-001-configuration_d_une_sandbox_ubuntu_avec_docker.md)
+- [Le pseudocode ?](./miscellaneous/notion-001-pseudocode.md)
 
 ## 📂 <span id="files-description">File description</span>
 
