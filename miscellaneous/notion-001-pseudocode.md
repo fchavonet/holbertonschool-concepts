@@ -1,6 +1,8 @@
 # Introduction
 
-Avant d’écrire une seule ligne de code, il est fondamental de penser comme un développeur. Cela signifie : comprendre la logique du programme, identifier les étapes nécessaires, structurer le traitement des données.
+Avant d’écrire une seule ligne de code, il est fondamental de penser comme un développeur.
+<br>
+Cela signifie : comprendre la logique du programme, identifier les étapes nécessaires, structurer le traitement des données.
 <br>
 Le pseudocode est un outil précieux pour cela. Il permet de formaliser une solution algorithmique sans se soucier de la syntaxe d’un langage particulier.
 
@@ -232,11 +234,11 @@ python todo_api.py
 
 | **Méthode** | **URL**     | **Description**                  |
 | ----------- | ----------- | -------------------------------- |
-| GET         | /todos/     | Liste toutes les tâches.         |
-| POST        | /todos/     | Crée une nouvelle tâche.         |
-| GET         | /todos/<id> | Récupère une tâche spécifique.   |
-| PUT         | /todos/<id> | Remplace complètement une tâche. |
-| DELETE      | /todos/<id> | Supprime une tâche.              |
+| GET         | `/todos/`   | Liste toutes les tâches.         |
+| POST        | `/todos/`   | Crée une nouvelle tâche.         |
+| GET         | `/todos/id` | Récupère une tâche spécifique.   |
+| PUT         | `/todos/id` | Remplace complètement une tâche. |
+| DELETE      | `/todos/id` | Supprime une tâche.              |
 
 5. Exemple de requête POST :
 
