@@ -1,4 +1,4 @@
-<img height="50px" align="right" src="">
+<img height="50px" align="right" src="https://raw.githubusercontent.com/fchavonet/fchavonet/refs/heads/main/assets/images/logo-windows.png" alt="Windows logo">
 
 # Windows - Configuration d'une sandbox Ubuntu avec WSL
 
