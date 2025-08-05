@@ -186,30 +186,22 @@ apt install python3-pip -y
 apt install python3-venv -y
 ```
 
-**Comment et pourquoi utiliser un environnement virtuel pour coder du Python :**
-
-Cela permet d'isoler les dépendances spécifiques à votre projet, évitant les conflits avec les bibliothèques système ou les limitations d'installation de paquets via `pip`. En effet, sur Mac et dans des environnements containerisés, certaines bibliothèques Python peuvent nécessiter des permissions ou des configurations particulières. Avec `venv`, vous travaillez dans un espace isolé où les paquets sont installés localement, sans impact sur le système global ou les autres projets, garantissant ainsi une configuration propre et reproductible.
-
-> 📌 N'hésitez pas à consulter la [documentation](https://docs.python.org/fr/3.13/library/venv.html) si besoin.
-
-## Comment utiliser `venv` :
-
-- Ouvrez votre dossier de travail depuis le terminal de Visual Studio Code.
-
-- Créer un environnement virtuel :
+31. Installer `curl` :
 
 ```bash
-python3 -m venv venv
+apt-get install curl 
 ```
 
-- Activer l'environnement virtuel :
+> 📌 Si vous souhaitez en savoir plus sur les environnements virtuels en Python, référez-vous à cette page de concept : [Création d’un environnement virtuel avec `venv`](https://github.com/fchavonet/holbertonschool-concepts/blob/main/python/python-000-creation_d_un_environnement_virtuel_avec_venv.md).
+
+32. Installer `npm` (Node Package Manager) :
 
 ```bash
-source venv/bin/activate
+apt install npm -y
 ```
 
-- Désactiver l'environnement virtuel :
+33. Installer `Node.js` :
 
 ```bash
-deactivate
+apt install nodejs
 ```

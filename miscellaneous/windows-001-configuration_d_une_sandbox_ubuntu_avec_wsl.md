@@ -155,3 +155,15 @@ sudo apt install python3-venv -y
 ```
 
 > 📌 Si vous souhaitez en savoir plus sur les environnements virtuels en Python, référez-vous à cette page de concept : [Création d’un environnement virtuel avec `venv`](https://github.com/fchavonet/holbertonschool-concepts/blob/main/python/python-000-creation_d_un_environnement_virtuel_avec_venv.md).
+
+25. Installer `npm` (Node Package Manager) :
+
+```bash
+apt install npm -y
+```
+
+26. Installer `Node.js` :
+
+```bash
+apt install nodejs
+```
