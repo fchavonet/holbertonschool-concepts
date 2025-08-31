@@ -1,5 +1,3 @@
-<img height="50px" align="right" src="https://raw.githubusercontent.com/fchavonet/fchavonet/main/assets/images/logo-miscellaneous.png" alt="Miscellaneous logo">
-
 # Le pseudocode ?
 
 ## Introduction
@@ -15,7 +13,7 @@ Le pseudocode est un outil précieux pour cela. Il permet de formaliser une solu
 Le pseudocode (ou pseudo-code) est une représentation textuelle et simplifiée d’un algorithme. Il se situe entre le langage naturel et le langage de programmation.
 Il n’a pas de grammaire universelle stricte : l’objectif est la clarté et la compréhension.
 
-> 📌 But : exprimer clairement la logique d’un programme, étape par étape, sans syntaxe technique.
+> But : exprimer clairement la logique d’un programme, étape par étape, sans syntaxe technique.
 
 ## Pourquoi utiliser du pseudocode ?
 
@@ -25,7 +23,7 @@ Il n’a pas de grammaire universelle stricte : l’objectif est la clarté et l
 - Sert de brouillon structuré avant la traduction en code.
 - Permet de confronter l’intention de départ avec l’implémentation réelle.
 
-> 📌 Logique métier : ensemble des règles et traitements qui traduisent les besoins réels d’un utilisateur ou d’un domaine dans une application.
+> Logique métier : ensemble des règles et traitements qui traduisent les besoins réels d’un utilisateur ou d’un domaine dans une application.
 
 ## Caractéristiques du pseudocode
 

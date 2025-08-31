@@ -1,5 +1,3 @@
-<img height="50px" align="right" src="https://raw.githubusercontent.com/fchavonet/fchavonet/main/assets/images/logo-c.png" alt="C logo">
-
 # C - Programme compilé vs programme interprété
 
 Dans ce cours, nous allons voir la différence entre un programme compilé et un programme interprété. Cette distinction est essentielle pour comprendre comment votre code en C est exécuté et pourquoi la compilation est une étape importante.

@@ -1,5 +1,3 @@
-<img height="50px" align="right" src="https://raw.githubusercontent.com/fchavonet/fchavonet/main/assets/images/logo-c.png" alt="C logo">
-
 # C - Hello World!
 
 Bienvenue dans ce premier cours de programmation en langage C !
@@ -69,7 +67,7 @@ gcc *.c -o hello_world
 
 Cela génère un fichier exécutable nommé `hello_world`.
 
-> 📌 Consultez le cours [Programme compilé vs programme interprété](./c-001-programme_compile_vs_programme_interprete.md) pour en apprendre plus sur cette commande.
+> Consultez le cours [Programme compilé vs programme interprété](./c-001-programme_compile_vs_programme_interprete.md) pour en apprendre plus sur cette commande.
 
 3. Exécuter le programme :
 

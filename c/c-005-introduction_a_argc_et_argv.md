@@ -1,5 +1,3 @@
-<img height="50px" align="right" src="https://raw.githubusercontent.com/fchavonet/fchavonet/main/assets/images/logo-c.png" alt="C logo">
-
 # C - Introduction à `argc` et `argv`
 
 Lorsque vous exécutez un programme en C depuis la ligne de commande, il est possible de lui passer des arguments.
@@ -31,7 +29,7 @@ int main(int argc, char *argv[])
 }
 ```
 
-> 📌 `char *argv[]` est équivalent à `char **argv`.
+> `char *argv[]` est équivalent à `char **argv`.
 
 ---
 
@@ -50,7 +48,7 @@ Imaginons que vous exécutez votre programme comme ceci :
     - `argv[2]` : `"argument2"`
     - `argv[3]` : `"argument3"`
 
-> 📌 `argc` compte le nom du programme lui-même (`argv[0]`) dans le total, d'où le chiffre 4.
+> `argc` compte le nom du programme lui-même (`argv[0]`) dans le total, d'où le chiffre 4.
 
 ---
 
@@ -259,7 +257,7 @@ int main(int argc, char *argv[])
 }
 ```
 
-> 📌 Attention, si vous testez le programme aves la multiplication, il est conseillé d’entourer `*` de guillemets pour éviter les soucis dans un shell.
+> Attention, si vous testez le programme aves la multiplication, il est conseillé d’entourer `*` de guillemets pour éviter les soucis dans un shell.
 
 **Explication :**
 

@@ -1,5 +1,3 @@
-<img height="50px" align="right" src="https://raw.githubusercontent.com/fchavonet/fchavonet/main/assets/images/logo-c.png" alt="C logo">
-
 # C - Introduction aux arbres binaires
 
 Les arbres binaires sont une structure de données essentielle, utilisée pour organiser l’information de façon hiérarchique. Comme les listes chaînées, ils utilisent des nœuds reliés entre eux, mais chaque nœud peut avoir jusqu’à deux enfants : un enfant gauche et un enfant droit. Cette structure permet d’accélérer certaines opérations comme la recherche ou le tri, et de représenter les données de manière plus naturelle dans certains cas.

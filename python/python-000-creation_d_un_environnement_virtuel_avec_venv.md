@@ -1,5 +1,3 @@
-<img height="50px" align="right" src="https://raw.githubusercontent.com/fchavonet/fchavonet/main/assets/images/logo-python.png" alt="Python logo">
-
 # Python - Création d’un environnement virtuel avec `venv`
 
 Quand on travaille sur plusieurs projets Python, un environnement virtuel permet d’isoler les dépendances de votre projet du reste de votre système. En créant un environnement dédié, vous vous assurez que les bibliothèques installées pour ce projet n’affectent pas les autres (et vice-versa). Python fournit pour cela le module `venv` qui permet de créer un environnement virtuel dans un dossier donné.
@@ -12,7 +10,7 @@ Quand on travaille sur plusieurs projets Python, un environnement virtuel permet
 sudo apt install python3-venv -y
 ```
 
-> 📌 Si vous utilisez une sandbox Docker créée à partie du cours "[Configuration d’une sandbox Ubuntu avec Docker](https://github.com/fchavonet/holbertonschool-concepts/blob/main/miscellaneous/mac-001-configuration_d_une_sandbox_ubuntu_avec_docker.md)", `sudo` ne devra pas être utilisé dans la commande.
+> Si vous utilisez une sandbox Docker créée à partie du cours "[Configuration d’une sandbox Ubuntu avec Docker](https://github.com/fchavonet/holbertonschool-concepts/blob/main/miscellaneous/mac-001-configuration_d_une_sandbox_ubuntu_avec_docker.md)", `sudo` ne devra pas être utilisé dans la commande.
 
 ---
 
@@ -45,7 +43,7 @@ Cette commande crée un dossier `venv/` contenant une copie de l’interpréteur
 Le `-m` indique que l’on exécute le module nommé `venv` et pas un fichier script de base.
 
 
-> 📌 Il est courant de nommer le dossier de l’environnement virtuel `.venv` (avec un point au début du nom). Cette convention a deux avantages : le dossier est caché par défaut dans l’explorateur de fichiers, et il est automatiquement ignoré par certains outils ou frameworks. Dans notre exemple, nous ne mettons pas le point pour vous permettre d'accéder facilement au dossier et de l'explorer si la curiosité vous en dit.
+> Il est courant de nommer le dossier de l’environnement virtuel `.venv` (avec un point au début du nom). Cette convention a deux avantages : le dossier est caché par défaut dans l’explorateur de fichiers, et il est automatiquement ignoré par certains outils ou frameworks. Dans notre exemple, nous ne mettons pas le point pour vous permettre d'accéder facilement au dossier et de l'explorer si la curiosité vous en dit.
 
 ---
 
@@ -72,7 +70,7 @@ Après création de l’environnement, il est souvent utile de mettre à jour pi
 pip install --upgrade pip
 ```
 
-> 📌 Ne versionnez pas le dossier d’environnement virtuel `venv` dans votre dépôt Git. Pensez à ajouter le nom de ce dossier (par exemple `venv/` ou `.venv/`) dans le fichier `.gitignore` de votre projet afin qu’il soit ignoré par le contrôle de version. Vous pouvez notamment utiliser le fichier [`.gitignore`](https://github.com/github/gitignore/blob/main/Python.gitignore) officiel pour Python proposé par GitHub (qui inclut déjà l’exclusion de `.venv`) comme point de départ.
+> Ne versionnez pas le dossier d’environnement virtuel `venv` dans votre dépôt Git. Pensez à ajouter le nom de ce dossier (par exemple `venv/` ou `.venv/`) dans le fichier `.gitignore` de votre projet afin qu’il soit ignoré par le contrôle de version. Vous pouvez notamment utiliser le fichier [`.gitignore`](https://github.com/github/gitignore/blob/main/Python.gitignore) officiel pour Python proposé par GitHub (qui inclut déjà l’exclusion de `.venv`) comme point de départ.
 
 ---
 
@@ -163,7 +161,7 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
-> 📌 Ou `.\venv\Scripts\Activate.ps1` sous Windows.
+> Ou `.\venv\Scripts\Activate.ps1` sous Windows.
 
 ```bash
 pip install -r requirements.txt
@@ -181,6 +179,6 @@ L’utilisation de `venv` vous permet :
 - D’éviter les conflits de versions.
 - De garantir que chaque collaborateur ou serveur reproduise exactement le même environnement.
 
-> 📌 Utilisez toujours un environnement virtuel pour vos projets Python, même pour les plus petits scripts. Cela garantit un environnement propre, et vous évite des conflits avec d’autres projets ou bibliothèques installées globalement.
+> Utilisez toujours un environnement virtuel pour vos projets Python, même pour les plus petits scripts. Cela garantit un environnement propre, et vous évite des conflits avec d’autres projets ou bibliothèques installées globalement.
 
 C’est une étape essentielle pour un développement Python professionnel et fiable.

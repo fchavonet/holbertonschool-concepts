@@ -1,5 +1,3 @@
-<img height="50px" align="right" src="https://raw.githubusercontent.com/fchavonet/fchavonet/main/assets/images/logo-c.png" alt="C logo">
-
 # C - Introduction aux listes chaînées
 
 Les listes chaînées sont une structure de données fondamentale en langage C. Elles permettent de stocker des éléments de manière dynamique et flexible. Ce guide vous aidera à comprendre ce que sont les listes chaînées, la différence entre les listes simplement chaînées et les listes doublement chaînées. Nous nous concentrerons ensuite sur les listes doublement chaînées avec des exemples clairs pour faciliter votre apprentissage.

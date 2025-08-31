@@ -1,5 +1,3 @@
-<img height="50px" align="right" src="https://raw.githubusercontent.com/fchavonet/fchavonet/main/assets/images/logo-c.png" alt="C logo">
-
 # C - Variables et types de données
 
 En langage C, les variables permettent de stocker et manipuler des données en mémoire. Avant toute utilisation, chaque variable doit être déclarée avec un type qui précise la nature des données qu’elle contiendra : un nombre entier, un caractère, une valeur flottante...
@@ -49,7 +47,7 @@ int a = 42;   // Déclaration + initialisation.
 | `float`  | Nombre réel simple     | 4 octets   | 1.17549 × 10⁻³⁸ à 3.40282 × 10³⁸   | `float f = 3.14;`          |
 | `double` | Nombre réel double     | 8 octets   | 2.22507 × 10⁻³⁰⁸ à 1.79769 × 10³⁰⁸ | `double d = 3.1415926535;` |
 
-> 📌 La taille peut varier selon l'architecture (32 bits, 64 bits...).
+> La taille peut varier selon l'architecture (32 bits, 64 bits...).
 
 ---
 
@@ -80,7 +78,7 @@ unsigned char d;
 | `signed`         | Permet de stocker des valeurs positives et négatives (c’est le comportement par défaut). |
 | `unsigned`       | Ne stocke que des valeurs positives (double la plage positive)  .                        |
 
-> 📌 Écrire `int` est équivalent à écrire `signed int`.
+> Écrire `int` est équivalent à écrire `signed int`.
 
 ---
 
@@ -142,7 +140,7 @@ int main(void)
 }
 ```
 
-> 📌 Une variable définie dans un bloc disparaît une fois ce bloc terminé.
+> Une variable définie dans un bloc disparaît une fois ce bloc terminé.
 
 ### Portée globale
 
@@ -191,7 +189,7 @@ int age;
 scanf("%f", &age); // ⚠️ Mauvais format ! "%f" attend un float.
 ```
 
-> 📌 Quand un entier `unsigned` dépasse sa valeur maximale, il revient à 0 (comportement cyclique).
+> Quand un entier `unsigned` dépasse sa valeur maximale, il revient à 0 (comportement cyclique).
 
 ---
 

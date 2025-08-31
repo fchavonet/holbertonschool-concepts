@@ -1,5 +1,3 @@
-<img height="50px" align="right" src="https://raw.githubusercontent.com/fchavonet/fchavonet/main/assets/images/logo-apple.png" alt="Apple logo">
-
 # Mac - Configuration d’une sandbox Ubuntu avec Docker
 
 1. Télécharger et installer [Docker Desktop](https://www.docker.com/products/docker-desktop/) (pas d'obligation de se connecter, peut être utilisé sans compte).
@@ -126,7 +124,7 @@ git config --global user.name "Nom d'utilisateur GitHub"
 git config --global user.email "Email GitHub"
 ```
 
-> 📌 Il est important d'utiliser votre vrai pseudonyme GitHub et l'adresse mail exacte de votre compte.
+> Il est important d'utiliser votre vrai pseudonyme GitHub et l'adresse mail exacte de votre compte.
 
 24. Installer `vim` :
 
@@ -192,7 +190,7 @@ apt install python3-venv -y
 apt-get install curl 
 ```
 
-> 📌 Si vous souhaitez en savoir plus sur les environnements virtuels en Python, référez-vous à cette page de concept : [Création d’un environnement virtuel avec `venv`](https://github.com/fchavonet/holbertonschool-concepts/blob/main/python/python-000-creation_d_un_environnement_virtuel_avec_venv.md).
+> Si vous souhaitez en savoir plus sur les environnements virtuels en Python, référez-vous à cette page de concept : [Création d’un environnement virtuel avec `venv`](https://github.com/fchavonet/holbertonschool-concepts/blob/main/python/python-000-creation_d_un_environnement_virtuel_avec_venv.md).
 
 32. Installer `npm` (Node Package Manager) :
 

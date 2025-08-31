@@ -1,5 +1,3 @@
-<img height="50px" align="right" src="https://raw.githubusercontent.com/fchavonet/fchavonet/refs/heads/main/assets/images/logo-windows.png" alt="Windows logo">
-
 # Windows - Configuration d'une sandbox Ubuntu avec WSL
 
 1. Télécharger et installer [Visual Studio Code](https://code.visualstudio.com/download).
@@ -16,7 +14,7 @@
 wsl --install
 ```
 
-> 📌 Vous pouvez aussi passer par le Microsoft Store mais utiliser la commande Terminal à l'avantage d'activer certaines options automatiquement.
+> Vous pouvez aussi passer par le Microsoft Store mais utiliser la commande Terminal à l'avantage d'activer certaines options automatiquement.
 
 6. S'assurer que `Virtual Machine Platform` et `Sous-système Windows pour Linux` sont bien activés dans les fonctionnalités de Windows.
 
@@ -31,7 +29,7 @@ wsl --install
     </tr>
 </table>
 
-> 📌 Pour trouver ces réglages, aller dans Paramètres/Système/Fonctionnalités facultatives/Plus de fonctionnalités Windows
+> Pour trouver ces réglages, aller dans Paramètres/Système/Fonctionnalités facultatives/Plus de fonctionnalités Windows
 
 7. Redemarrer l'ordinateur si demandé.
 
@@ -53,7 +51,7 @@ wsl --install -d Ubuntu
 
 11. Une fois l'installation finie, choisissez un pseudonyme (sans majuscule) et un mot de passe.
 
-> 📌 Il est normal que rien ne s'affiche lorsque vous tappez votre mot de passe.
+> Il est normal que rien ne s'affiche lorsque vous tappez votre mot de passe.
 
 12. Vous serez normalement sur un Terminal Ubuntu (visible grace au changement de prompt).
 
@@ -84,7 +82,7 @@ code .
     - Entrer `**/.vscode` pour masquer le fichier `.vscode`.
     - Répéter l'opération pour chacun des fichiers que vous ne voulez pas voir dans votre dossier utilisateur.
 
-> 📌 Il est possible de masquer directement tous les fichiers cachés de Linux en ajoutant : `*.*` mais avec le risque de masquer des fichiers utiles, par exemple après l'installation de Git, un fichier `.gitconfig` sera présent, il est conseillé de le garder car pratique pour changer la configuration de Git sans utiliser de ligne de commande.
+> Il est possible de masquer directement tous les fichiers cachés de Linux en ajoutant : `*.*` mais avec le risque de masquer des fichiers utiles, par exemple après l'installation de Git, un fichier `.gitconfig` sera présent, il est conseillé de le garder car pratique pour changer la configuration de Git sans utiliser de ligne de commande.
 
 17. Mettre à jour Ubuntu :
 
@@ -108,7 +106,7 @@ git config --global user.name "Nom d'utilisateur GitHub"
 git config --global user.email "Email GitHub"
 ```
 
-> 📌 Il est important d'utiliser votre vrai pseudonyme GitHub et l'adresse mail exacte de votre compte.
+> Il est important d'utiliser votre vrai pseudonyme GitHub et l'adresse mail exacte de votre compte.
 
 ---
 
@@ -154,7 +152,7 @@ sudo apt install python3-pip -y
 sudo apt install python3-venv -y
 ```
 
-> 📌 Si vous souhaitez en savoir plus sur les environnements virtuels en Python, référez-vous à cette page de concept : [Création d’un environnement virtuel avec `venv`](https://github.com/fchavonet/holbertonschool-concepts/blob/main/python/python-000-creation_d_un_environnement_virtuel_avec_venv.md).
+> Si vous souhaitez en savoir plus sur les environnements virtuels en Python, référez-vous à cette page de concept : [Création d’un environnement virtuel avec `venv`](https://github.com/fchavonet/holbertonschool-concepts/blob/main/python/python-000-creation_d_un_environnement_virtuel_avec_venv.md).
 
 25. Installer `npm` (Node Package Manager) :
 

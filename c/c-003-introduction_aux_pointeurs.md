@@ -1,5 +1,3 @@
-<img height="50px" align="right" src="https://raw.githubusercontent.com/fchavonet/fchavonet/main/assets/images/logo-c.png" alt="C logo">
-
 # C - Introduction aux pointeurs
 
 Les pointeurs sont une notion fondamentale en langage C, ce guide a pour but de vous expliquer en détail ce que sont les pointeurs, comment les utiliser et pourquoi ils sont utiles, avec des exemples clairs pour en faciliter la compréhension.
@@ -131,7 +129,7 @@ printf("%d\n", *(pointeur + 1)); // 2
 printf("%d\n", pointeur[2]); // 3
 ```
 
-> 📌 `pointeur[2]` est équivalent à `*(pointeur + 2)`.
+> `pointeur[2]` est équivalent à `*(pointeur + 2)`.
 
 ---
 
@@ -228,7 +226,7 @@ pointeur += 2;
 printf("%d\n", *pointeur); // 40
 ```
 
-> 📌 Lorsqu'on incrémente un pointeur vers un type `int`, il avance de la taille d'un `int` en mémoire.
+> Lorsqu'on incrémente un pointeur vers un type `int`, il avance de la taille d'un `int` en mémoire.
 
 ---
 

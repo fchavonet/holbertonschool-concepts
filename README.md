@@ -1,25 +1,25 @@
-<img height="50px" align="right" src="https://raw.githubusercontent.com/fchavonet/fchavonet/main/assets/images/logo-holberton_school.png" alt="Holberton School logo">
+<img height="50" align="right" src="https://raw.githubusercontent.com/fchavonet/fchavonet/refs/heads/main/assets/images/logo-holberton_school.webp" alt="Holberton School logo">
 
 # Concepts
 
-## 🔖 Table of contents
+## Table of contents
 
 <details>
     <summary>
           CLICK TO ENLARGE 😇
     </summary>
-    📄 <a href="#description">Description</a>
+    <a href="#description">Description</a>
     <br>
-    📘 <a href="#concepts">Concepts</a>
+    <a href="#concepts">Concepts</a>
     <br>
-    📂 <a href="#files-description">Files description</a>
+    <a href="#files-description">Files description</a>
     <br>
-    ♥️ <a href="#thanks">Thanks</a>
+    <a href="#thanks">Thanks</a>
     <br>
-    👷 <a href="#authors">Authors</a>
+    <a href="#authors">Authors</a>
 </details>
 
-## 📄 <span id="description">Description</span>
+## <span id="description">Description</span>
 
 This repository brings together technical resources written in French to support Holberton School students in their learning journey. While all official documentation and projects at Holberton are in English, which is a deliberate and valuable choice, given the importance of English in the software industry, we also welcome students from all backgrounds, with no prior experience or prerequisites. For some of them, especially at the beginning, the language barrier can slow down their understanding of technical concepts.
 
@@ -29,9 +29,9 @@ Writing these guides also gives me the opportunity to reinforce my own technical
 
 This initiative is above all a way to make technical education more accessible, while staying aligned with Holberton's values: inclusion, autonomy, and excellence.
 
-## 📘 <span id="concepts">Concepts</span>
+## <span id="concepts">Concepts</span>
 
-### <img width="50px" src="https://raw.githubusercontent.com/fchavonet/fchavonet/main/assets/images/logo-c.png" alt="C logo">
+### C
 
 - [Hello World!](./c/c-000-hello_world!.md)
 - [Programme compilé vs programme interprété](./c/c-001-programme_compile_vs_programme_interprete.md)
@@ -42,36 +42,36 @@ This initiative is above all a way to make technical education more accessible, 
 - [Introduction aux listes chaînées](./c/c-006-introduction_aux_listes_chainees.md)
 - [Introduction aux arbres binaires](./c/c-007-introduction_aux_arbres_binaires.md)
 
-### <img width="50px" src="https://raw.githubusercontent.com/fchavonet/fchavonet/main/assets/images/logo-javascript.png" alt="JavaScript logo">
+### JavaScript
 
 - [Introduction](./javascript/000-introduction.md)
 
-### <img width="50px" src="https://raw.githubusercontent.com/fchavonet/fchavonet/main/assets/images/logo-python.png" alt="Python logo">
+### Python
 
 - [Création d’un environnement virtuel avec `venv`](./python/python-000-creation_d_un_environnement_virtuel_avec_venv.md)
 
-### <img width="50px" src="https://raw.githubusercontent.com/fchavonet/fchavonet/main/assets/images/logo-miscellaneous.png" alt="Miscellaneous logo">
+### Miscellaneous
 
 - [Configuration d’une sandbox Ubuntu avec Docker](./miscellaneous/mac-001-configuration_d_une_sandbox_ubuntu_avec_docker.md)
 - [Configuration d'une sandbox Ubuntu avec WSL](./miscellaneous/windows-001-configuration_d_une_sandbox_ubuntu_avec_wsl.md)
 - [Le pseudocode ?](./miscellaneous/notion-001-pseudocode.md)
 
-## 📂 <span id="files-description">File description</span>
+## <span id="files-description">Files description</span>
 
-| **FILE**        | **DESCRIPTION**                                     |
+| **FILES**       | **DESCRIPTION**                                     |
 | :-------------: | --------------------------------------------------- |
 | `assets`        | Contains the resources required for the repository. |
 | `c`             | C programming concepts in French.                   | 
-| `javascript`    | Javascript programming concepts in French.          |
+| `javascript`    | JavaScript programming concepts in French.          |
 | `python`        | Python programming concepts in French.              |
 | `miscellaneous` | Other general concepts                              |
-| `README.md`     | The readme file you are currently reading 😉.       |
+| `README.md`       | The README file you are currently reading 😉.    |
 
-## ♥️ <span id="thanks">Thanks</span>
+## <span id="thanks">Thanks</span>
 
 A big thank you to all my Holberton School peers for their help and support throughout this project.
 
-## 👷 <span id="authors">Authors</span>
+## <span id="authors">Authors</span>
 
 **Fabien CHAVONET**
-- Github: [@fchavonet](https://github.com/fchavonet)
+- GitHub: [@fchavonet](https://github.com/fchavonet)
