@@ -264,6 +264,6 @@ Service proposant des ressources informatiques virtualisées à la demande.
 
 ---
 
-> **Remarque :** Ce document est évolutif.
+> **Remarque :** ce document est évolutif.
 > <br>
 > Si un acronyme important manque, n’hésitez pas à proposer une contribution via une **pull request** ou une **issue**.
