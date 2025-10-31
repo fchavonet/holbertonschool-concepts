@@ -16,9 +16,17 @@ Système d’exploitation sur lequel fonctionnent les logiciels.
 <br>
 Interface textuelle utilisée pour exécuter des commandes.
 
+**<ins>TUI</ins>**: *Text-based User Interface*
+<br>
+Interface utilisateur textuelle (plus évoluée qu’une simple CLI).
+
 **<ins>GUI</ins>**: *Graphical User Interface*
 <br>
 Interface graphique permettant à l’utilisateur d’interagir visuellement avec un système.
+
+**<ins>API</ins>**: *Application Programming Interface*
+<br>
+Interface qui permet à des programmes de communiquer entre eux.
 
 **<ins>SDK</ins>**: *Software Development Kit*
 <br>
@@ -27,10 +35,6 @@ Ensemble d’outils fournis pour développer sur une plateforme donnée.
 **<ins>IDE</ins>**: *Integrated Development Environment*
 <br>
 Environnement tout-en-un pour écrire, compiler et tester du code.
-
-**<ins>API</ins>**: *Application Programming Interface*
-<br>
-Interface qui permet à des programmes de communiquer entre eux.
 
 ## Programmation & conception logicielle
 
@@ -122,13 +126,29 @@ Structure arborescente d’une page web manipulable via JavaScript.
 <br>
 Technique permettant de charger des données sans recharger toute la page.
 
+**<ins>CSR</ins>**: *Client-Side Rendering*
+<br>
+Rendu effectué côté navigateur via JavaScript.
+
+**<ins>SSR</ins>**: *Server-Side Rendering*
+<br>
+Rendu d’une application web côté serveur.
+
 **<ins>SPA</ins>**: *Single Page Application*
 <br>
 Application web chargée une seule fois, puis mise à jour dynamiquement.
 
+**<ins>REST</ins>**: *Representational State Transfer*
+<br>
+Style d’architecture pour les API web.
+
 **<ins>JWT</ins>**: *JSON Web Token*
 <br>
 Format de jeton sécurisé utilisé pour l’authentification dans les applications web.
+
+**<ins>CDN</ins>**: *Content Delivery Network*
+<br>
+Réseau distribué de serveurs optimisant la diffusion de contenu.
 
 ## Réseaux, serveurs & DevOps
 
@@ -144,17 +164,21 @@ Protocole d’adressage des machines sur un réseau.
 <br>
 Protocole sécurisé pour accéder à distance à un système.
 
-**<ins>CI/CD</ins>**: *Continuous Integration / Continuous Deployment*
+**<ins>VM</ins>**: *Virtual Machine*
 <br>
-Processus d’intégration et de déploiement automatisés du code.
+Machine virtuelle exécutant un environnement isolé.
 
 **<ins>VCS</ins>**: *Version Control System*
 <br>
 Système de gestion de versions (ex. : Git).
 
-**<ins>VM</ins>**: *Virtual Machine*
+**<ins>CI/CD</ins>**: *Continuous Integration / Continuous Deployment*
 <br>
-Machine virtuelle exécutant un environnement isolé.
+Processus d’intégration et de déploiement automatisés du code.
+
+**<ins>API Gateway</ins>**: *(pas un acronyme, mais un terme clé)*
+<br>
+Point d’entrée unique pour gérer et sécuriser les appels API.
 
 ## Méthodologies & gestion de projet
 
@@ -164,7 +188,11 @@ Méthode de gestion de projet basée sur la flexibilité et les itérations cour
 
 **<ins>SCRUM</ins>**: *(cadre de travail Agile)*
 <br>
-Méthodologie Agile fondée sur des cycles courts appelés “sprints”.
+Méthodologie Agile fondée sur des cycles courts appelés sprints.
+
+**<ins>MVP</ins>**: *Minimum Viable Product*
+<br>
+Version minimale d’un produit permettant de tester une idée.
 
 **<ins>KPI</ins>**: *Key Performance Indicator*
 <br>
@@ -178,7 +206,7 @@ Méthode de définition d’objectifs mesurables et de suivi des résultats.
 <br>
 Rôle chargé de la gestion de projet ou de la stratégie produit.
 
-## UX/UI, design & produits numériques
+## UX / UI, design & produits numériques
 
 **<ins>UX</ins>**: *User Experience*
 <br>
@@ -188,11 +216,27 @@ Expérience vécue par l’utilisateur lors de l’usage d’un produit.
 <br>
 Interface graphique et interactive du produit.
 
+**<ins>CTA</ins>**: *Call To Action*
+<br>
+Élément incitant l’utilisateur à effectuer une action.
+
 **<ins>SEO</ins>**: *Search Engine Optimization*
 <br>
 Optimisation d’un contenu pour le référencement sur les moteurs de recherche.
 
-## Concepts modernes & tendances
+**<ins>AR</ins>**: *Augmented Reality*
+<br>
+Technologie qui superpose des éléments numériques (images, textes, sons) au monde réel via un écran ou un dispositif dédié.
+
+**<ins>VR</ins>**: *Virtual Reality*
+<br>
+Technologie immersive plongeant l’utilisateur dans un environnement entièrement virtuel généré par ordinateur.
+
+**<ins>XR</ins>**: *Extended Reality*
+<br>
+Terme englobant l’ensemble des technologies immersives, incluant la réalité augmentée (AR) et la réalité virtuelle (VR).
+
+## Technologies modernes & tendances
 
 **<ins>AI / IA</ins>**: *Artificial Intelligence*
 <br>
@@ -201,6 +245,10 @@ Ensemble de techniques permettant à une machine de simuler une forme d’intell
 **<ins>ML</ins>**: *Machine Learning*
 <br>
 Branche de l’intelligence artificielle fondée sur l’apprentissage automatique.
+
+**<ins>LLM</ins>**: *Large Language Model*
+<br>
+Modèle d’IA capable de générer et comprendre du texte (comme ChatGPT).
 
 **<ins>SaaS</ins>**: *Software as a Service*
 <br>
@@ -216,4 +264,5 @@ Service proposant des ressources informatiques virtualisées à la demande.
 
 ---
 
-> **Remarque :** Ce document est évolutif. Si un acronyme important manque, n’hésitez pas à proposer une contribution via une **pull request** ou une **issue**.
+> **Remarque :** Ce document est évolutif.
+> Si un acronyme important manque, n’hésitez pas à proposer une contribution via une **pull request** ou une **issue**.
