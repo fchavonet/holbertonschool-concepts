@@ -172,7 +172,7 @@ Machine virtuelle exécutant un environnement isolé.
 <br>
 Système de gestion de versions (ex. : Git).
 
-**<ins>CI/CD</ins>**: *Continuous Integration / Continuous Deployment*
+**<ins>CI / CD</ins>**: *Continuous Integration / Continuous Deployment*
 <br>
 Processus d’intégration et de déploiement automatisés du code.
 
@@ -265,4 +265,5 @@ Service proposant des ressources informatiques virtualisées à la demande.
 ---
 
 > **Remarque :** Ce document est évolutif.
+> <br>
 > Si un acronyme important manque, n’hésitez pas à proposer une contribution via une **pull request** ou une **issue**.
