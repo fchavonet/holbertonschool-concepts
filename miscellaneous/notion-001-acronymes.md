@@ -5,23 +5,23 @@ Ce document regroupe les acronymes essentiels du monde du développement.
 
 ## Sommaire
 
-[Concepts généraux \& fondamentaux](#concepts-généraux--fondamentaux)
+[Concepts généraux \& fondamentaux](#➧-concepts-généraux--fondamentaux)
 <br>
-[Programmation \& conception logicielle](#programmation--conception-logicielle)
+[Programmation \& conception logicielle](#➧-programmation--conception-logicielle)
 <br>
-[Données \& bases de données](#données--bases-de-données)
+[Données \& bases de données](#➧-données--bases-de-données)
 <br>
-[Web \& technologies front-end/back-end](#web--technologies-front-endback-end)
+[Web \& technologies front-end/back-end](#➧-web--technologies-front-endback-end)
 <br>
-[Réseaux, serveurs \& DevOps](#réseaux-serveurs--devops)
+[Réseaux, serveurs \& DevOps](#➧-réseaux-serveurs--devops)
 <br>
-[Méthodologies \& gestion de projet](#méthodologies--gestion-de-projet)
+[Méthodologies \& gestion de projet](#➧-méthodologies--gestion-de-projet)
 <br>
-[UX / UI, design \& produits numériques](#ux--ui-design--produits-numériques)
+[UX / UI, design \& produits numériques](#➧-ux--ui-design--produits-numériques)
 <br>
-[Concepts modernes \& tendances](#concepts-modernes--tendances)
+[Concepts modernes \& tendances](#➧-concepts-modernes--tendances)
 
-### ➧ Concepts généraux & fondamentaux
+## ➧ Concepts généraux & fondamentaux
 
 • **IT**: *Information Technology*
 <br>
@@ -51,7 +51,7 @@ Environnement tout-en-un pour écrire, compiler et tester du code.
 <br>
 Interface qui permet à des programmes de communiquer entre eux.
 
-### ➧ Programmation & conception logicielle
+## ➧ Programmation & conception logicielle
 
 • **OOP / POO**: *Object-Oriented Programming*
 <br>
@@ -85,7 +85,7 @@ Méthode de développement où les tests sont écrits avant le code.
 <br>
 Logiciel dont le code source est librement accessible et modifiable.
 
-### ➧ Données & bases de données
+## ➧ Données & bases de données
 
 • **DBMS / SGBD**: *DataBase Management System*
 <br>
@@ -111,7 +111,7 @@ Format hiérarchique de structuration des données.
 <br>
 Format léger d’échange de données entre serveurs et applications.
 
-### ➧ Web & technologies front-end/back-end
+## ➧ Web & technologies front-end/back-end
 
 • **HTTP**: *HyperText Transfer Protocol*
 <br>
@@ -149,7 +149,7 @@ Application web chargée une seule fois, puis mise à jour dynamiquement.
 <br>
 Format de jeton sécurisé utilisé pour l’authentification dans les applications web.
 
-### ➧ Réseaux, serveurs & DevOps
+## ➧ Réseaux, serveurs & DevOps
 
 • **DNS**: *Domain Name System*
 <br>
@@ -175,7 +175,7 @@ Système de gestion de versions (ex. : Git).
 <br>
 Machine virtuelle exécutant un environnement isolé.
 
-### ➧ Méthodologies & gestion de projet
+## ➧ Méthodologies & gestion de projet
 
 • **AGILE**: *(approche non acronyme)*
 <br>
@@ -197,7 +197,7 @@ Méthode de définition d’objectifs mesurables et de suivi des résultats.
 <br>
 Rôle chargé de la gestion de projet ou de la stratégie produit.
 
-### ➧ UX/UI, design & produits numériques
+## ➧ UX/UI, design & produits numériques
 
 • **UX**: *User Experience*
 <br>
@@ -211,7 +211,7 @@ Interface graphique et interactive du produit.
 <br>
 Optimisation d’un contenu pour le référencement sur les moteurs de recherche.
 
-### ➧ Concepts modernes & tendances
+## ➧ Concepts modernes & tendances
 
 • **AI / IA**: *Artificial Intelligence*
 <br>
