@@ -4,7 +4,7 @@ Ce document regroupe les acronymes essentiels du monde du développement.
 
 ## Concepts généraux & fondamentaux
 
-**<u>IT</u></u>**: *Information Technology*
+**<ins>IT</ins>**: *Information Technology*
 <br>
 Domaine général de la technologie de l’information.
 
