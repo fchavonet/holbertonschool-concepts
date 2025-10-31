@@ -4,22 +4,7 @@
 
 ## Table of contents
 
-<details>
-    <summary>
-          CLICK TO ENLARGE 😇
-    </summary>
-    <a href="#description">Description</a>
-    <br>
-    <a href="#concepts">Concepts</a>
-    <br>
-    <a href="#files-description">Files description</a>
-    <br>
-    <a href="#thanks">Thanks</a>
-    <br>
-    <a href="#authors">Authors</a>
-</details>
-
-## <span id="description">Description</span>
+## Description
 
 This repository brings together technical resources written in French to support Holberton School students in their learning journey. While all official documentation and projects at Holberton are in English, which is a deliberate and valuable choice, given the importance of English in the software industry, we also welcome students from all backgrounds, with no prior experience or prerequisites. For some of them, especially at the beginning, the language barrier can slow down their understanding of technical concepts.
 
@@ -29,7 +14,7 @@ Writing these guides also gives me the opportunity to reinforce my own technical
 
 This initiative is above all a way to make technical education more accessible, while staying aligned with Holberton's values: inclusion, autonomy, and excellence.
 
-## <span id="concepts">Concepts</span>
+## Concepts
 
 ### C
 
@@ -54,24 +39,25 @@ This initiative is above all a way to make technical education more accessible, 
 
 - [Configuration d’une sandbox Ubuntu avec Docker](./miscellaneous/mac-001-configuration_d_une_sandbox_ubuntu_avec_docker.md)
 - [Configuration d'une sandbox Ubuntu avec WSL](./miscellaneous/windows-001-configuration_d_une_sandbox_ubuntu_avec_wsl.md)
+- [Acronympes](./miscellaneous/notion-001-acronymes.md)
 - [Le pseudocode ?](./miscellaneous/notion-001-pseudocode.md)
 
-## <span id="files-description">Files description</span>
+## File Description
 
-| **FILES**       | **DESCRIPTION**                                     |
+| **FILE**        | **DESCRIPTION**                                     |
 | :-------------: | --------------------------------------------------- |
 | `assets`        | Contains the resources required for the repository. |
 | `c`             | C programming concepts in French.                   | 
 | `javascript`    | JavaScript programming concepts in French.          |
 | `python`        | Python programming concepts in French.              |
-| `miscellaneous` | Other general concepts                              |
-| `README.md`       | The README file you are currently reading 😉.    |
+| `miscellaneous` | Other general concepts.                             |
+| `README.md`     | The README file you are currently reading 😉.       |
 
-## <span id="thanks">Thanks</span>
+## Thanks
 
-- A big thank you to all my Holberton School peers for their help and support throughout this project.
+- A big thank you to all my Holberton School peers for their help and support throughout these projects.
 
-## <span id="authors">Authors</span>
+## Author(s)
 
 **Fabien CHAVONET**
 - GitHub: [@fchavonet](https://github.com/fchavonet)
