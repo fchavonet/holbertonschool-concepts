@@ -39,7 +39,7 @@ This initiative is above all a way to make technical education more accessible, 
 
 - [Configuration d’une sandbox Ubuntu avec Docker](./miscellaneous/mac-001-configuration_d_une_sandbox_ubuntu_avec_docker.md)
 - [Configuration d'une sandbox Ubuntu avec WSL](./miscellaneous/windows-001-configuration_d_une_sandbox_ubuntu_avec_wsl.md)
-- [Acronympes](./miscellaneous/notion-001-acronymes.md)
+- [Acronymes](./miscellaneous/notion-001-acronymes.md)
 - [Le pseudocode ?](./miscellaneous/notion-001-pseudocode.md)
 
 ## File Description
