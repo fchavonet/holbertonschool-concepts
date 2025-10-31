@@ -2,25 +2,6 @@
 
 Ce document regroupe les acronymes essentiels du monde du développement.
 
-
-## Sommaire
-
-[Concepts généraux \& fondamentaux](#➧-concepts-généraux--fondamentaux)
-<br>
-[Programmation \& conception logicielle](#➧-programmation--conception-logicielle)
-<br>
-[Données \& bases de données](#➧-données--bases-de-données)
-<br>
-[Web \& technologies front-end/back-end](#➧-web--technologies-front-endback-end)
-<br>
-[Réseaux, serveurs \& DevOps](#➧-réseaux-serveurs--devops)
-<br>
-[Méthodologies \& gestion de projet](#➧-méthodologies--gestion-de-projet)
-<br>
-[UX / UI, design \& produits numériques](#➧-ux--ui-design--produits-numériques)
-<br>
-[Concepts modernes \& tendances](#➧-concepts-modernes--tendances)
-
 ## ➧ Concepts généraux & fondamentaux
 
 • **IT**: *Information Technology*
