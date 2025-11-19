@@ -53,8 +53,9 @@ This initiative is above all a way to make technical education more accessible, 
 | :-------------: | --------------------------------------------------- |
 | `assets`        | Contains the resources required for the repository. |
 | `c`             | C programming concepts in French.                   | 
-| `javascript`    | JavaScript programming concepts in French.          |
 | `python`        | Python programming concepts in French.              |
+| `javascript`    | JavaScript programming concepts in French.          |
+| `React`         | React programming concepts in French.               |
 | `miscellaneous` | Other general concepts.                             |
 | `README.md`     | The README file you are currently reading 😉.       |
 
