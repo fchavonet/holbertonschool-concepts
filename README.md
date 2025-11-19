@@ -37,7 +37,7 @@ This initiative is above all a way to make technical education more accessible, 
 
 ### React
 
-- [Monter un projet React/Tailwind/Lucide React/DaisyUI proprement et rapidement](./react/001-monter_un_projet_react_tailwind_lucide_react_daisyui_proprement_et_rapidement.md)
+- [Monter un projet React/Tailwind/Lucide React/DaisyUI proprement et rapidement](./react/001-monter_un_projet_react_proprement_et_rapidement.md)
 
 ### Miscellaneous
 
