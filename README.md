@@ -26,7 +26,7 @@ This initiative is above all a way to make technical education more accessible, 
 - [Introduction à `argc` et `argv`](./c/c-005-introduction_a_argc_et_argv.md)
 - [Introduction aux listes chaînées](./c/c-006-introduction_aux_listes_chainees.md)
 - [Introduction aux arbres binaires](./c/c-007-introduction_aux_arbres_binaires.md)
--
+
 ### Python
 
 - [Création d’un environnement virtuel avec `venv`](./python/python-000-creation_d_un_environnement_virtuel_avec_venv.md)
@@ -38,6 +38,7 @@ This initiative is above all a way to make technical education more accessible, 
 ### React
 
 - [Monter un projet React/Tailwind/Lucide React/DaisyUI proprement et rapidement](./react/001-monter_un_projet_react_proprement_et_rapidement.md)
+- [Déployer une application Vite/React sur GitHub Pages](./react/002-deployer_une_application_vite_react_sur_github_pages.md)
 
 ### Miscellaneous
 
