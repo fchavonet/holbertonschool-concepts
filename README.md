@@ -26,21 +26,25 @@ This initiative is above all a way to make technical education more accessible, 
 - [Introduction à `argc` et `argv`](./c/c-005-introduction_a_argc_et_argv.md)
 - [Introduction aux listes chaînées](./c/c-006-introduction_aux_listes_chainees.md)
 - [Introduction aux arbres binaires](./c/c-007-introduction_aux_arbres_binaires.md)
+-
+### Python
+
+- [Création d’un environnement virtuel avec `venv`](./python/python-000-creation_d_un_environnement_virtuel_avec_venv.md)
 
 ### JavaScript
 
 - [Introduction](./javascript/000-introduction.md)
 
-### Python
+### React
 
-- [Création d’un environnement virtuel avec `venv`](./python/python-000-creation_d_un_environnement_virtuel_avec_venv.md)
+- [Monter un projet React/Tailwind/Lucide React/DaisyUI proprement et rapidement](./react/001-monter_un_projet_react_tailwind_lucide_react_daisyui_proprement_et_rapidement.md)
 
 ### Miscellaneous
 
 - [Configuration d’une sandbox Ubuntu avec Docker](./miscellaneous/mac-001-configuration_d_une_sandbox_ubuntu_avec_docker.md)
 - [Configuration d'une sandbox Ubuntu avec WSL](./miscellaneous/windows-001-configuration_d_une_sandbox_ubuntu_avec_wsl.md)
 - [Acronymes](./miscellaneous/notion-001-acronymes.md)
-- [Le pseudocode ?](./miscellaneous/notion-001-pseudocode.md)
+- [Le pseudocode ?](./miscellaneous/notion-002-pseudocode.md)
 
 ## File Description
 
