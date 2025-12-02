@@ -202,7 +202,7 @@ void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int))
 }
 ```
 
-Pour faciliter votre compréhension et vous aider à visualiser le fonctionnement des arbres binaires et de leurs différents parcours, voici une application web interactive : [Binary Tree Visualizer](https://fchavonet.github.io/web-binary_tree_visualizer/).
+Pour faciliter votre compréhension et vous aider à visualiser le fonctionnement des arbres binaires et de leurs différents parcours, voici une application web interactive : [Binary Tree Visualizer](https://fchavonet.github.io/full_stack-binary_tree_visualizer/).
 
 Cette application vous permet de :
 
