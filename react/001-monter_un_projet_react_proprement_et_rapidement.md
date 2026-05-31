@@ -73,8 +73,6 @@ npm create vite@latest ./
 ![](../assets/images/react/monter_un_projet_react_proprement_et_rapidement-003.webp)
 - Variant : JavaScript
 ![](../assets/images/react/monter_un_projet_react_proprement_et_rapidement-004.webp)
-- Use rolldown-vite : No
-![](../assets/images/react/monter_un_projet_react_proprement_et_rapidement-005.webp)
 - Install with npm and start now? : No
 ![](../assets/images/react/monter_un_projet_react_proprement_et_rapidement-006.webp)
 
@@ -95,14 +93,27 @@ Vous devriez avoir cette arborescence dans votre dossier de travail :
 1. Ajouter dans `eslint.config.js` :
 
 ```
-"quotes": ["error", "double"],
-"semi": ["error", "always"],
+rules: {
+  quotes: ["error", "double"],
+  semi: ["error", "always"],
+  "no-unused-vars": [
+    "error",
+    {
+      varsIgnorePattern: "^[A-Z_]",
+    },
+  ],
+},
 ```
 
-> À ajouter juste après : `"no-unused-vars": ["error", { varsIgnorePattern: "^[A-Z_]" }],`
+> À ajouter juste après le `},` du bloc `languageOptions`.
 
-- La première règle force l’usage des guillemets doubles (`"`) (je suis un bon français 😂) !
-- La seconde impose les points-virgules (`;`) en fin de ligne.
+- `quotes` force l'utilisation des guillemets doubles (").
+- `semi` impose les points-virgules (;) en fin d'instruction.
+- `no-unused-vars` signale les variables inutilisées.
+
+Cette configuration constitue une base simple pour démarrer un projet React. Vous êtes libres d'ajouter d'autres règles selon vos préférences ou les besoins de votre équipe.
+
+La liste complète des règles disponibles est consultable dans la [documentation officielle](https://eslint.org/docs/latest/rules/) d'ESLint.
 
 2. Modifier la section `"scripts"` du fichier `package.json` :
 
@@ -186,9 +197,12 @@ Vous pouvez clôturer votre serveur en appuyant sur `Ctrl` + `q` depuis le Termi
 ## Nettoyer le projet
 
 - Supprimer les fichiers :
-  - `public/vite.svg`
-  - `src/assets/react.svg`
-  - `src/app.css`
+  - `public/favicon.svg`.
+  - `public/icons.svg`.
+  - `src/assets/hero.png`.
+  - `src/assets/react.svg`.
+  - `src/assets/vite.svg`.
+  - `src/app.css`.
 - Renommer le fichier `index.css` en `global.css`.
 - Remplacer le contenu du fichier `main.jsx` par cette base de code :
 
@@ -229,7 +243,9 @@ Si vous n'avez pas coupé votre serveur, vous devriez avoir une page qui ressemb
 
 Votre projet est maintenant minimaliste, propre et parfaitement fonctionnel.
 
-Je suis bien conscient que d'autres réglages peuvent être ajoutés (notamment pour ESLint) mais l'idée ici est d'avoir un projet de base sans trop de complexité.
+Cette configuration constitue une base saine pour démarrer un projet React sans ajouter de complexité inutile.
+
+De nombreux outils et bonnes pratiques pourront seront nécessaires par la suite, comme les tests automatisés, Prettier, TypeScript ou des règles ESLint plus avancées...
 
 ## Installer Lucide React
 
