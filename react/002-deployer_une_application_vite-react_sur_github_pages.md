@@ -208,21 +208,18 @@ Une nouvelle branche `gh-pages` devrait alors apparaître sur GitHub.
 
 Settings → Pages
 
-![]()
+![](../assets/images/react/deployer_une_application_vite-react_sur_github_pages-001.webp)
 
 2. Dans la section Build and deployment, sélectionner :
 
 Deploy from a branch
 
-![]()
-
 3. Configurer ensuite les options suivantes :
 
-Branch : `gh-pages`
+- Branch : `gh-pages`
+- Folder : `/(root)`
 
-Folder : `/(root)`
-
-![]()
+![](../assets/images/react/deployer_une_application_vite-react_sur_github_pages-002.webp)
 
 4. Cliquer sur Save pour enregistrer la configuration.
 
@@ -238,7 +235,9 @@ Elle ressemblera généralement à :
 
 Par exemple :
 
-[https://fchavonet.github.io/live_coding-react_and_daisy/](https://fchavonet.github.io/live_coding-react_and_daisy/)
+[https://fchavonet.github.io/mon_super_projet_react/](https://fchavonet.github.io/mon_super_projet_react/)
+
+![](../assets/images/react/deployer_une_application_vite-react_sur_github_pages-003.webp)
 
 Votre application React est désormais accessible sur Internet.
 
@@ -246,7 +245,7 @@ Votre application React est désormais accessible sur Internet.
 
 ## Mettre à jour le site
 
-Après chaque modification du projet :
+1. Après chaque modification du projet :
 
 ```
 git add .
@@ -254,7 +253,7 @@ git commit -m "Update project."
 git push
 ```
 
-Puis republier :
+2. Déployer de nouveau le projet :
 
 ```
 npm run deploy
@@ -287,21 +286,15 @@ L'ensemble du processus est donc automatisé par une seule commande.
 
 ### La page est blanche
 
-Vérifier que la propriété suivante est bien présente dans le fichier `vite.config.js` :
+1. Vérifier que la propriété suivante est bien présente dans le fichier `vite.config.js` :
 
 ```
 base: "./",
 ```
 
-Puis reconstruire le projet :
+2. Déployer de nouveau le projet :
 
 ```bash
-npm run build
-```
-
-et republier :
-
-```
 npm run deploy
 ```
 
@@ -335,13 +328,13 @@ npm list gh-pages
 
 ### La commande deploy n'existe pas
 
-Vérifier que le script suivant est bien présent dans le fichier `package.json` :
+1. Vérifier que le script suivant est bien présent dans le fichier `package.json` :
 
 ```
 "deploy": "npm run build && gh-pages -d dist"
 ```
 
-Puis relancer :
+2. Relancer :
 
 ```
 npm install
