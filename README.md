@@ -38,7 +38,7 @@ This initiative is above all a way to make technical education more accessible, 
 ### React
 
 - [Monter un projet React proprement et rapidement](./react/001-monter_un_projet_react_proprement_et_rapidement.md)
-- [Déployer une application Vite/React sur GitHub Pages](./react/002-deployer_une_application_vite_react_sur_github_pages.md)
+- [Déployer une application Vite/React sur GitHub Pages](./react/002-deployer_une_application_vite-react_sur_github_pages.md)
 
 ### Miscellaneous
 
