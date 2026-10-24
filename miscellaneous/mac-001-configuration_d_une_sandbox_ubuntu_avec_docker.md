@@ -29,7 +29,7 @@ docker pull ubuntu:latest
 8. Créer un nouveau conteneur Ubuntu et l'exécuter en mode interactif :
 
 ```bash
-docker run -itd --restart always --name Holberton -v "$(pwd):/home/ubuntu/" ubuntu
+docker run -itd --restart always --name Sandbox -v "$(pwd):/home/sandbox/" ubuntu
 ```
 
 **Explications de la commande :**
@@ -108,13 +108,22 @@ export LANGUAGE=en_US:en
 export LC_ALL=en_US.UTF-8
 ```
 
-22. Installer `git` :
+22. Personnaliser le prompt du terminal :
+
+```bash
+echo "export PS1='USERNAME:\w# '" >> ~/.bashrc
+source ~/.bashrc
+```
+
+> Penser à remplacer `USERNAME` par le nom d'utilisateur qui vous convient.
+
+23. Installer `git` :
 
 ```bash
 apt install git -y
 ```
 
-23. Configurer `git` :
+24. Configurer `git` :
 
 ```bash
 git config --global user.name "Nom d'utilisateur GitHub"
@@ -126,7 +135,7 @@ git config --global user.email "Email GitHub"
 
 > Il est important d'utiliser votre vrai pseudonyme GitHub et l'adresse mail exacte de votre compte.
 
-24. Installer `vim` :
+25. Installer `vim` :
 
 ```bash
 apt install vim -y
@@ -148,57 +157,57 @@ Vous pouvez maintenant suivre les instructions des projets sans aucun problème 
 
 ## Bonus :
 
-25. Installer `gcc` :
+26. Installer `gcc` :
 
 ```bash
 apt install gcc -y
 ```
 
-26. Installer `make` :
+27. Installer `make` :
 
 ```bash
 apt install make -y
 ```
 
-27. Installer `python3` :
+28. Installer `python3` :
 
 ```bash
 apt install python3 -y
 ```
 
-28. Installer `pycodestyle` :
+29. Installer `pycodestyle` :
 
 ```bash
 apt install pycodestyle -y
 ```
 
-29. Installer `pip` :
+30. Installer `pip` :
 
 ```bash
 apt install python3-pip -y
 ```
 
-30. Installer `venv` :
+31. Installer `venv` :
 
 ```bash
 apt install python3-venv -y
 ```
 
-31. Installer `curl` :
+32. Installer `curl` :
 
 ```bash
-apt-get install curl 
+apt-get install curl -y
 ```
 
 > Si vous souhaitez en savoir plus sur les environnements virtuels en Python, référez-vous à cette page de concept : [Création d’un environnement virtuel avec `venv`](https://github.com/fchavonet/holbertonschool-concepts/blob/main/python/python-000-creation_d_un_environnement_virtuel_avec_venv.md).
 
-32. Installer `npm` (Node Package Manager) :
+33. Installer `npm` (Node Package Manager) :
 
 ```bash
 apt install npm -y
 ```
 
-33. Installer `Node.js` :
+34. Installer `Node.js` :
 
 ```bash
 apt install nodejs
